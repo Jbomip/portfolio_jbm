@@ -1,0 +1,279 @@
+@charset "utf-8";
+@import url(//fonts.googleapis.com/earlyaccess/jejuhallasan.css);
+body {
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: #ffffff;
+  height: 7vh;
+  display: flex;
+  position: relative;
+}
+header .header_sns {
+  display: none;
+}
+header .material-symbols-outlined {
+  position: absolute;
+  right: 30px;
+  top: 15px;
+}
+header .ul1 {
+  background-color: #fff;
+  position: absolute;
+  right: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  z-index: 9;
+  display: none;
+}
+header .ul1 li:nth-of-type(1) {
+  border-top: none;
+}
+header .ul1 li {
+  border-top: 1px solid rgb(39, 35, 35);
+  width: 6rem;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+header .ul1 li a {
+  display: block;
+}
+header .ul2 {
+  display: none;
+}
+header .logo-header {
+  height: 2.5rem;
+  margin-left: 50px;
+  margin-top: 6px;
+}
+.title {
+  height: 70vh;
+  background: url(./images/title.jpg) no-repeat 50% / cover;
+  margin-bottom: 50px;
+  position: relative;
+}
+.title-txt {
+  position: absolute;
+  top: 14.5rem;
+  font-family: "Jeju Hallasan", cursive;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+}
+.title-txt h1:nth-of-type(1) {
+  font-size: 1.5rem;
+}
+.title-txt h1:nth-of-type(2) {
+  font-size: 4rem;
+}
+.video {
+  display: flex;
+  justify-content: center;
+}
+.video .youtube {
+  width: 90%;
+  height: 15.3rem;
+}
+.middle {
+  width: 100%;
+  margin-top: 50px;
+  padding: 80px 0 20px 0;
+  background-color: #ff9e30;
+}
+.middle section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.middle img {
+  width: 90%;
+}
+.middle section .box {
+  color: #fff;
+  width: 90%;
+  text-align: center;
+  line-height: 1.6;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.middle section .bold {
+  font-size: 2rem;
+  width: 80%;
+  margin: 20px 0;
+  font-family: "Noto Sans KR", sans-serif;
+  position: relative;
+}
+.middle section .bold::after {
+  content: "";
+  display: block;
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  top: 2px;
+  right: 5%;
+  background: url(./images/patten1.png) no-repeat;
+  background-size: 50px;
+  background-position: 50% 50%;
+}
+.middle section .bold::before {
+  content: "";
+  display: block;
+  background-color: yellow;
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  top: 2px;
+  left: 5%;
+  background: url(./images/patten1.png) no-repeat;
+  background-size: 50px;
+  background-position: 50% 50%;
+}
+.middle section .sant1 {
+  font-size: 1.1rem;
+}
+.middle section .sant2 {
+  margin: 0 auto;
+  width: 280px;
+  margin-bottom: 30px;
+  font-family: "Nanum Gothic", sans-serif;
+  font-weight: 400;
+}
+.middle section .btn {
+  display: none;
+}
+.title-h2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 1.8rem;
+  margin: 70px 0;
+  font-weight: 700;
+}
+aside img {
+  width: 90%;
+}
+aside .txt {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+aside .txt section {
+  text-align: center;
+  width: 300px;
+  margin: 20px 0 50px 0;
+  line-height: 1.6;
+  font-family: "Nanum Gothic", sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+aside .txt section h3 {
+  font-size: 2rem;
+  margin: 10px 0 10px 0;
+  font-family: "Noto Sans KR", sans-serif;
+}
+aside .txt section .txt-btn a {
+  display: block;
+  margin-top: 30px;
+  font-size: 0.9rem;
+  padding: 9px;
+  width: 6rem;
+  border-radius: 40px;
+  color: #fff;
+  background-color: #ff9e30;
+}
+
+.logo-wrap {
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo-wrap .logo-1 {
+  display: flex;
+  justify-content: space-around;
+  width: 350px;
+}
+.logo-wrap .logo-1 img {
+  width: 60px;
+}
+
+.plus-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 50px 0 60px 0;
+}
+.plus-container .plus {
+  border-radius: 50px;
+  /* margin: 5px; */
+  margin: 20px 0 50px 0;
+  /* margin-bottom: 40px; */
+  width: 45%;
+  /* width: 40%; */
+  height: 12rem;
+  /* height: 10rem; */
+  background-color: #ff9e30;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.plus-container .plus h2 {
+  margin-top: 55px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 1.1rem;
+}
+.plus-container .btn-1 {
+  padding: 6px 0;
+  border-radius: 30px;
+  width: 100px;
+  text-align: center;
+  border: 1px solid #ffffff;
+  margin: 30px 45px;
+  color: #fff;
+  opacity: 80%;
+}
+.plus-container a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.plus-container .plus p:nth-of-type(1) {
+  display: none;
+}
+.btn-plus {
+  display: none;
+}
+footer {
+  background-color: #574040;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 0.8rem;
+  text-align: center;
+}
+footer .right {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 18px;
+}
+footer .ftr img {
+  display: none;
+}
