@@ -40,10 +40,30 @@ $(window).on("scroll", () => {
   } else {
     $(".moon-3").removeClass("active2-3");
   }
+
+  // const moon4 = $(".project:nth-of-type(2)").offset().top;
+  // console.log(moon4);
+  let skill1 = $(".skill1").offset().top;
+  // console.log(scrollY);// 스크롤 값
+  console.log(".skill1"); // body 시작에서부터의 거리
+  console.log($(".skill1").height()); // footer의 높이
+  console.log(document.documentElement.clientHeight); // 화면의 크기
+
+  // let result =
+  //   footerHeight -
+  //   $(".skill1").height() -
+  //   document.documentElement.clientHeight;
+
+  // if (scrollY > result) {
+  //   $('.banner').addClass('on');
+  // } else {
+  //   $('.banner').removeClass('on');
+  // }
 });
 
 //
 $(".sun").delay(1).animate({ marginTop: -200 }, 1500);
+$(".sun-light").delay(1).animate({ marginTop: -260 }, 1500);
 $(".rock-bg1").delay(50).animate({ paddingBottom: 50 }, 1500);
 $(".rock-bg2").delay(200).animate({ paddingBottom: 55 }, 1500);
 // $(".rock-bg2").delay(1).animate({ marginTop: -200 }, 1500);
@@ -60,35 +80,29 @@ $(window).on("scroll", () => {
   // }
 });
 
-// addEventListener("mousemove", (evt) => {
-//   let x = evt.clientX,
-//     y = evt.clientY;
-//   console.log(x, y);
-
-//   $(".cloud1").css({ left: -700 + x / 60, top: y / 30 });
-//   $(".cloud2").css({ right: -700 + x / 30, top: 100 + y / 30 });
-// });
-//
-// @keyframes rock-bg1 {
-//   0% {
-//     transform: translateY(0);
-//   }
-
-//   100% {
-//     transform: translateY(10%);
-//   }
-// }
 $(".morning p").on("click", () => {
-  // $('#box1').delay(1500).animate({ marginTop: 200, opacity: 1 }, 1000);
-  // $('#box2').delay(1000).animate({ marginTop: 400, opacity: 1 }, 1000);
-  // mor-1 mor-2 mor-3 mor-4
   $(".mor-1").delay(100).addClass("none");
   $(".mor-2").delay(110).removeClass("none");
   $(".mor-2").delay(1500).addClass("none");
   $(".mor-3").delay(1500).removeClass("none");
   $(".mor-3").delay(4500).addClass("none");
   $(".mor-4").delay(4500).removeClass("none");
+});
 
-  // $('#box3').delay(500).addClass(addClass("active1"));
-  // $('#box3').delay(500).addClass(addClass("active1"));
+let prevScroll = window.scrollY;
+console.log(prevScroll);
+
+$(window).on("scroll", () => {
+  let currentScroll = window.scrollY;
+  console.log("currentScroll: ", currentScroll);
+  console.log("1 prevScroll: ", prevScroll);
+
+  if (prevScroll > currentScroll) {
+    $("header").css({ top: 0 }, 200);
+  } else {
+    $("header").css({ top: -64 }, 200);
+  }
+
+  prevScroll = currentScroll;
+  console.log("2 prevScroll: ", prevScroll);
 });

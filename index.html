@@ -19,15 +19,33 @@
     <link rel="stylesheet" href="./index.css">
     <!--***** js *****-->
     <script src="./common/style/jquery-3.7.0.min.js"></script>
+    <script src="./common/style/jquery-ui.min.js"></script>
     <script defer src="./index.js"></script>
 </head>
+<!-- 
+    참고 사이트 에서 기술 더 첨부 개별적으로 작업했던거와는 다르게
+    
+ -->
 
 <body>
     <header>
-
-        <h1 class="posi-1">title</h1>
-
+        <p>.</p>
+        <ul>
+            <li>project</li>
+            <li>skill</li>
+            <li>contact</li>
+        </ul>
+    </header>
+    <div class="aft-noon">
+        <!-- 정보미 포트폴리오 -->
+        <h1 class="posi-1"></h1>
         <img src="./images/background.png" alt="#" class="back posi-1">
+        <div class="sun-light-w posi-1">
+            <img src="./images/sun-light.png" alt="#" class="sun-light">
+        </div>
+        <!-- <div class="sun-light-w posi-1 sun-light2">
+            <img src="./images/sun-light2.png" alt="#" class="sun-light">
+        </div> -->
         <img src="./images/thesun.png" alt="#" class="sun posi-1">
         <img src="./images/rock-behind.png" alt="#" class="rock-bg2 posi-1">
         <img src="./images/rock-front.png" alt="#" class="rock-bg1 posi-1">
@@ -36,7 +54,7 @@
         <img src="./images/small-rock1.png" alt="#" class="rock1 posi-1">
         <img src="./images/small-rock2.png" alt="#" class="rock2 posi-1">
         <img src="./images/sea.png" alt="#" class="sea posi-1">
-    </header>
+    </div>
     <!--  레퍼런스사이트처럼 사진 그림자 inner?로  -->
     <main>
         <div class="bg-moon">
@@ -47,12 +65,12 @@
             <img src="./images/moon3.png" alt="#" class="moon-3 posi-3">
             <div class="intro">
                 <div class="intro-1 hei">
-                    <p>Portpolio</p>
+                    <p>project</p>
                     <p>skill</p>
                     <p>about</p>
                 </div>
                 <div class="intro-2 hei">
-                    <p>정보미</p>
+                    <p>jungbomi<br>Portpolio</p>
                     <!-- <p>정보미</p>
                     <p>정보미</p> -->
                 </div>
@@ -69,11 +87,11 @@
                         <ul>
                             <li>#반응형</li>
                             <li>#CSS</li>
-                            <li>#text</li>
                         </ul>
                         <a href="#" class="btn">보러가기</a>
                     </div>
-                    <img src="https://via.placeholder.com/400x600" alt="임시이미지">
+                    <img src="./images/jejuminsocchon.png" alt="#">
+                    <!-- <img src="https://via.placeholder.com/400x600" alt="임시이미지"> -->
                 </div>
             </div>
             <div class="project wid">
@@ -84,7 +102,6 @@
                         <ul>
                             <li>#자바스크립트</li>
                             <li>#스와이퍼</li>
-                            <li>#text</li>
                         </ul>
                         <a href="#" class="btn">보러가기</a>
                         <!-- 서브페이지랑 연결되게 -->
@@ -126,7 +143,7 @@
 
 
 
-            <div class="skill  wid">
+            <div class="skill  wid  topjs skill1">
                 <div class="s_box">
                     <h3 class="skill_flex_wid">HTML5 <br>& CSS3</h3>
                     <ul class="skill_flex_wid">
@@ -136,7 +153,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="skill wid topjs">
+            <div class="skill wid">
                 <div class="s_box">
                     <h3 class="skill_flex_wid">JabaScript <br>& jQurey</h3>
                     <ul class="skill_flex_wid">
@@ -169,9 +186,9 @@
                 </div>
             </div>
 
-            <div class="about wid">
+            <!-- <div class="about wid">
                 <h1>about</h1>
-            </div>
+            </div> -->
         </article>
     </main>
 
@@ -205,11 +222,6 @@
         </div>
     </div>
 
-    <footer>
-        <h1>contact me</h1>
-        <a href="#" class="f-btn">위로</a>
-        <!-- 부드럽게올라가는거 -->
-    </footer>
 
 </body>
 

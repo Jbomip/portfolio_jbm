@@ -7,12 +7,54 @@ body {
   background-color: #0b0f1c;
 }
 header {
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  height: 4rem;
+  width: 100%;
+  border-bottom: 1px #fff solid;
+  transition: 0.4s;
+  box-sizing: border-box;
+}
+header ul {
+  /* background-color: aqua; */
+  position: absolute;
+  right: 5%;
+  top: -1;
+  display: flex;
+  font-size: 1.8rem;
+  padding: 0;
+}
+header ul li {
+  cursor: pointer;
+  width: 8rem;
+  height: 4rem;
+  line-height: 3.5rem;
+  text-align: center;
+  font-weight: bold;
+  transition: 0.2s;
+}
+header ul li:hover {
+  color: #000;
+  background-color: #fff;
+}
+header p {
+  position: absolute;
+  left: 5%;
+  width: 3.5rem;
+  height: 3.5rem;
+  text-indent: -9999px;
+  background: url(./images/logo.png) no-repeat 50% 70%;
+  background-size: 100%;
+}
+
+.aft-noon {
   height: 75rem;
   width: 100%;
   position: relative;
   overflow: hidden;
 }
-header .posi-1 {
+.aft-noon .posi-1 {
   position: absolute;
 }
 
@@ -22,6 +64,25 @@ header .posi-1 {
   bottom: 0;
   width: 100%;
   height: 100%;
+}
+.sun-light {
+  /* left: 50%;
+  top: 30%; */
+  /* transform: translate(-50%, -50%); */
+  width: 100%;
+
+  /* animation: sun-light 2s ease-in-out infinite alternate; */
+  animation: sun-light infinite linear 4s;
+}
+.sun-light-w {
+  left: 50%;
+  top: 70%;
+  transform: translate(-50%, -50%);
+  /* background-color: #fff; */
+  width: 40%;
+}
+.sun-light2 {
+  width: 45%;
 }
 .sun {
   /* display: none; */
@@ -104,8 +165,13 @@ header .posi-1 {
     transform: translateY(-5%);
   }
 }
+@keyframes sun-light {
+  100% {
+    transform: rotate(-360deg);
+  }
+}
 
-header h1 {
+.aft-noon h1 {
   z-index: 9;
   font-size: 5rem;
   padding: 0;
@@ -202,18 +268,21 @@ aside .hei {
 aside .intro-1 {
   position: absolute;
   right: 175px;
-  background-color: seagreen;
+  background-color: #5d3299;
   width: 17rem;
   border-radius: 50px;
+  margin-top: 2rem;
 }
 aside .intro-2 {
+  margin-top: 2rem;
   position: absolute;
   right: 80px;
-  background-color: rgba(224, 213, 64);
+  background-color: #ffb629;
   width: 14rem;
   /* width: 40%; */
   border-radius: 50px;
-  font-size: 2rem;
+  font-size: 1.2rem;
+  text-align: left;
 }
 
 /* article project */
@@ -286,6 +355,9 @@ article .project .btn:hover {
 article .project:nth-of-type(4) {
   margin-bottom: 20rem;
 }
+article .project:nth-child(1) img {
+  width: 400px;
+}
 
 /* article .skill */
 
@@ -322,16 +394,6 @@ article .s_box ul {
   line-height: 1.8;
   /* background-color: #ffb629; */
   /* width: 40%; */
-}
-
-/* about */
-
-article .about {
-  background-color: #ffb629;
-  background-color: #3b8aff;
-  margin-top: 20rem;
-  height: 70rem;
-  width: 100%;
 }
 
 /* morning */
@@ -382,24 +444,4 @@ article .about {
   bottom: 5rem;
   right: 32rem;
   z-index: 9999;
-}
-/* footer */
-footer {
-  position: relative;
-  background-color: #83c8f7;
-  height: 33rem;
-  width: 100%;
-}
-footer a {
-  position: absolute;
-  display: block;
-  bottom: 3rem;
-  right: 10rem;
-  width: 5rem;
-  height: 5rem;
-  text-indent: -9999px;
-  background: url(./images/article-btn.png) no-repeat 50% / contain;
-}
-footer a:active {
-  background: url(./images/article-btn-push.png) no-repeat 50% 62% / contain;
 }
