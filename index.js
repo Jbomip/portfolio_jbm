@@ -1,5 +1,5 @@
 // 버튼 클릭시 최상단으로
-$(".f-btn").on("click", (e) => {
+$("").on("click", (e) => {
   e.preventDefault();
   $(".posi-3").addClass("none");
   scrollTo({
@@ -43,21 +43,21 @@ $(window).on("scroll", () => {
 
   // const moon4 = $(".project:nth-of-type(2)").offset().top;
   // console.log(moon4);
-  let skill1 = $(".skill1").offset().top;
+  // let morJs = $(".mor-js").offset().top;
   // console.log(scrollY);// 스크롤 값
-  console.log(".skill1"); // body 시작에서부터의 거리
-  console.log($(".skill1").height()); // footer의 높이
-  console.log(document.documentElement.clientHeight); // 화면의 크기
+  // console.log(".mor-js"); // body 시작에서부터의 거리
+  // console.log($(".mor-js").height()); // footer의 높이
+  // console.log(document.documentElement.clientHeight); // 화면의 크기
 
   // let result =
   //   footerHeight -
-  //   $(".skill1").height() -
+  //   $(".mor-js").height() -
   //   document.documentElement.clientHeight;
 
   // if (scrollY > result) {
-  //   $('.banner').addClass('on');
+  //   $('.mor-2').addClass('on');
   // } else {
-  //   $('.banner').removeClass('on');
+  //   $('.mor-2').removeClass('on');
   // }
 });
 
@@ -66,29 +66,18 @@ $(".sun").delay(1).animate({ marginTop: -200 }, 1500);
 $(".sun-light").delay(1).animate({ marginTop: -260 }, 1500);
 $(".rock-bg1").delay(50).animate({ paddingBottom: 50 }, 1500);
 $(".rock-bg2").delay(200).animate({ paddingBottom: 55 }, 1500);
-// $(".rock-bg2").delay(1).animate({ marginTop: -200 }, 1500);
+//
+
+$(".mor-ship").on("click", () => {
+  $(".mor-2").delay(600).animate({ opacity: 1 }, 100);
+  $(".mor-3").delay(900).animate({ opacity: 1 }, 100);
+  $(".mor-4").delay(1200).animate({ opacity: 1 }, 100);
+  console.log("클릭함");
+  $(".mor-sun").delay(250).animate({ top: 450, left: 800 }, 1300);
+  $(".mor-ship").removeClass("ship-ani");
+});
 
 //
-$(window).on("scroll", () => {
-  const mor = $(".morning").offset().top;
-  console.log(mor);
-
-  // if (scrollY > moon1) {
-  //   $(".moon-1").addClass("active1");
-  // } else {
-  //   $(".moon-1").removeClass("active1");
-  // }
-});
-
-$(".morning p").on("click", () => {
-  $(".mor-1").delay(100).addClass("none");
-  $(".mor-2").delay(110).removeClass("none");
-  $(".mor-2").delay(1500).addClass("none");
-  $(".mor-3").delay(1500).removeClass("none");
-  $(".mor-3").delay(4500).addClass("none");
-  $(".mor-4").delay(4500).removeClass("none");
-});
-
 let prevScroll = window.scrollY;
 console.log(prevScroll);
 
@@ -106,3 +95,4 @@ $(window).on("scroll", () => {
   prevScroll = currentScroll;
   console.log("2 prevScroll: ", prevScroll);
 });
+//
