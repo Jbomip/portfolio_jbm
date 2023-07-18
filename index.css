@@ -80,10 +80,12 @@ header p {
   transform: translate(-50%, -50%);
   /* background-color: #fff; */
   width: 40%;
+  /* background-color: #ffb629; */
 }
-.sun-light2 {
+/* .sun-light2 {
   width: 45%;
-}
+  background-color: #5d3299;
+} */
 .sun {
   /* display: none; */
   left: 50%;
@@ -98,6 +100,10 @@ header p {
   bottom: 0;
   width: 100%;
   height: 37%;
+}
+.clouds {
+  /* background-color: violet; */
+  width: 100%;
 }
 .cloud1 {
   /* display: none; */
@@ -173,7 +179,7 @@ header p {
 
 .aft-noon h1 {
   z-index: 9;
-  font-size: 5rem;
+  font-size: 3rem;
   padding: 0;
   margin: 0;
   top: 20%;
