@@ -218,3 +218,35 @@ gsap.from(".trigger4 ul", {
   opacity: 0,
   x: 150,
 });
+$("#pro").on("click", (evt) => {
+  evt.preventDefault();
+
+  const project = $("main").offset().top;
+
+  scrollTo({
+    top: project,
+    behavior: "smooth",
+  });
+});
+$("#skill").on("click", (evt) => {
+  evt.preventDefault();
+
+  const skill = $(".skill1").offset().top;
+
+  scrollTo({
+    top: skill,
+    behavior: "smooth",
+  });
+});
+$("#con").on("click", (evt) => {
+  evt.preventDefault();
+
+  const con = $(".mor-cloud").offset().top;
+  const skillH = $(".skill").innerHeight();
+  console.log(skillH);
+
+  scrollTo({
+    top: con,
+    behavior: "smooth",
+  });
+});
