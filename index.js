@@ -1,5 +1,5 @@
 // 버튼 클릭시 최상단으로
-$("").on("click", (e) => {
+$(".upto").on("click", (e) => {
   e.preventDefault();
   $(".posi-3").addClass("none");
   scrollTo({
@@ -108,18 +108,17 @@ $(window).on("scroll", () => {
     $(".p-2").addClass("none");
   }
 });
-// gsap.timeline({
-//   scrollTrigger: {
-//     trigger: ".triger1",
-//     start: "center center ", //Animation start at this point
-//     end: "top 15%", //Animation end at this point
-//     markers: true,
-//     scrub: true,
-//     pin: true,
-//   },
-// });
+$(window).on("scroll", () => {
+  const upto = $(".pro-1").offset().top;
+  console.log(upto);
 
-//
+  if (scrollY > upto) {
+    $(".upto").addClass("upto-add");
+  } else {
+    $(".upto").removeClass("upto-add");
+  }
+});
+
 gsap.from(".trigger1 h3", {
   scrollTrigger: {
     trigger: ".trigger1",
