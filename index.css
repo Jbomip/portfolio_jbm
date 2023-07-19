@@ -1,5 +1,16 @@
 @charset "utf-8";
+/* font-family: 'Luckiest Guy', cursive; */
 @import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+/* font-family: 'Black Han Sans', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap");
+/*  font-family: 'Jeju Hallasan', cursive; */
+@import url(//fonts.googleapis.com/earlyaccess/jejuhallasan.css);
+/* font-family: 'Oswald', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap");
+/* font-family: 'Angkor', cursive; */
+@import url("https://fonts.googleapis.com/css2?family=Angkor&display=swap");
+/* font-family: 'Kanit', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300;600;800&display=swap");
 body {
   margin: 0;
   padding: 0;
@@ -24,6 +35,8 @@ header ul {
   display: flex;
   font-size: 1.8rem;
   padding: 0;
+  font-family: "Kanit", sans-serif;
+  font-weight: 600;
 }
 header ul li {
   cursor: pointer;
@@ -31,12 +44,32 @@ header ul li {
   height: 4rem;
   line-height: 3.5rem;
   text-align: center;
-  font-weight: bold;
   transition: 0.2s;
+  position: relative;
+}
+header ul li:after {
+  position: absolute;
+  top: 3rem;
+  left: 0;
+  left: 0.5rem;
+  display: block;
+  content: "";
+  width: 100%;
+  width: 90%;
+  height: 30px;
+  height: 8px;
+  background-color: #fff;
+  background-color: #000000;
+  /* border-bottom: solid 4px #000000; */
+  transform: scaleX(0);
+  transition: transform 380ms ease-in-out;
 }
 header ul li:hover {
-  color: #000;
+  color: #000000;
   background-color: #fff;
+}
+header ul li:hover:after {
+  transform: scaleX(1);
 }
 header p {
   position: absolute;
@@ -189,17 +222,18 @@ header p {
 
 .aft-noon h1 {
   z-index: 9;
-  font-size: 3rem;
+  font-size: 3.5rem;
   padding: 0;
   margin: 0;
   top: 20%;
   left: 50%;
   transform: translate(-50%);
-  border: #fff 1px solid;
+  border: #fff 3px solid;
   width: 30rem;
   text-align: center;
   height: 8rem;
   line-height: 7.5rem;
+  font-family: "TTWanjudaedunsancheB", sans-serif;
 }
 
 main {
@@ -288,6 +322,8 @@ aside .intro-1 {
   width: 17rem;
   border-radius: 50px;
   margin-top: 2rem;
+  font-family: "Angkor", cursive;
+  font-size: 1.5rem;
 }
 aside .intro-2 {
   margin-top: 2rem;
@@ -299,6 +335,8 @@ aside .intro-2 {
   border-radius: 50px;
   font-size: 1.2rem;
   text-align: left;
+  font-family: "Kanit", sans-serif;
+  font-weight: 800;
 }
 
 /* article project */
@@ -316,6 +354,7 @@ article .wid {
 }
 article .project {
   margin: 15rem 0;
+  font-family: "Pretendard";
 }
 
 article .project .wrapper {
@@ -329,7 +368,6 @@ article .project .text_wrapper {
 }
 article .project .text_wrapper h1 {
   font-size: 3.5rem;
-  font-weight: bold;
   padding-top: 3rem;
 }
 article .project .text_wrapper p:nth-of-type(1) {
@@ -348,6 +386,14 @@ article .project .text_wrapper ul {
   font-size: 1.3rem;
   width: 20rem;
 }
+.pro-1 h1 {
+  font-family: "Jeju Hallasan", cursive;
+}
+.pro-2 h1 {
+  font-family: "Black Han Sans", sans-serif;
+  /* font-family: "Luckiest Guy", cursive; */
+  text-transform: uppercase;
+}
 
 article .project img {
   vertical-align: top;
@@ -363,16 +409,45 @@ article .project .btn {
   padding: 20px 50px;
   background: url(./images/articlebtn.png) no-repeat 50% / cover;
 }
-/* background-image: linear-gradient(35deg, #ffb629, #6a317e, #111420);
+article .project .btn p {
+  position: absolute;
+  top: 0;
+  right: 8px;
+  text-indent: -99999px;
+  width: 2.5rem;
+  background: url(./images/Arrow.png) no-repeat 50% 50% / contain;
+  background-size: 20px;
+  /* background-color: #ffb629; */
 }
-article .project .btn:hover {
-  background-image: linear-gradient(35deg, #faad12, #7a3494, #111938);
-} */
+article .project .btn:hover p {
+  animation: view 0.8s ease-in-out infinite alternate;
+}
+.project h3 {
+  text-indent: -9999px;
+  width: 500px;
+  height: 500px;
+  background-color: #ffb629;
+}
+.project:nth-of-type(1) h3 {
+  background-size: 900px;
+  background: url(./images/jejuminsocchon.png) no-repeat 50% 50% / cover;
+}
+.project:nth-of-type(2) h3 {
+  background: url(./images/Mint-Festa-2023-list.png) no-repeat 20px 20px / cover;
+}
+
+@keyframes view {
+  0% {
+    /* opacity: 1; */
+  }
+  100% {
+    /* opacity: 0; */
+    transform: translate(8px);
+  }
+}
+
 article .project:nth-of-type(4) {
   margin-bottom: 20rem;
-}
-article .project:nth-child(1) img {
-  width: 400px;
 }
 
 /* article .skill */
@@ -384,6 +459,7 @@ article .skill {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 article .s_box {
   width: 100%;
@@ -410,24 +486,92 @@ article .s_box ul {
   line-height: 1.8;
   /* background-color: #ffb629; */
   /* width: 40%; */
+  font-family: "Pretendard", serif;
+  font-weight: 300;
 }
-
+article .skill h3 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  line-height: 1.1;
+}
 /* morning */
+.posi-2 {
+  position: absolute;
+}
 .morning {
   margin: 0 auto;
   height: 75rem;
   position: relative;
   overflow: hidden;
 }
-.morning p {
+.morning .mor-text-wrapper {
+  position: relative;
+  z-index: 9999;
+  /* height: 20%; */
+  /* width: 40%; */
+  width: 30rem;
+  /* background-color: #ffb629; */
   position: absolute;
-  z-index: 9999999;
-  background-color: #ffb629;
-  padding: 50px;
+  bottom: 16.5%;
+  left: 1rem;
 }
-
-.posi-2 {
+.morning h1 {
   position: absolute;
+  /* background-color: #5d3299; */
+  font-size: 4rem;
+  bottom: 25.5%;
+  left: 2rem;
+  font-weight: 800;
+  z-index: 9999;
+  font-family: "Kanit", sans-serif;
+}
+.morning .mor-text-wrapper a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 2rem;
+  transition: 0.5s;
+  font-family: "Pretendard", serif;
+  font-weight: 500;
+}
+.morning .mor-text-wrapper a:hover {
+  transform: translate(30px);
+}
+.email-t p {
+  background-color: #5d3299;
+  background: url(./images/google.png) no-repeat 50% 50% / contain;
+  background-size: 3rem;
+}
+.git-t p {
+  background: url(./images/github.png) no-repeat 50% 50% / contain;
+  background-size: 3rem;
+  /* background-color: violet; */
+  border-radius: 50px;
+}
+.mor-t1 {
+  padding-left: 1.5rem;
+  display: flex;
+  align-items: center;
+  line-height: 1.8;
+  /* text-shadow: 6px 8px 5px #000; */
+}
+.mor-t1 p {
+  /* background-color: turquoise; */
+  width: 4rem;
+  height: 3rem;
+  text-indent: -9999px;
+}
+.mor-text-wrapper-1 {
+  position: absolute;
+  z-index: 9999;
+  bottom: 23.5%;
+  right: 20px;
+  font-size: 2rem;
+  text-align: right;
+  font-family: "Pretendard", serif;
+  line-height: 1.6;
+}
+.mor-text-wrapper-1 span {
+  font-weight: 800;
 }
 
 .mor-sun {
@@ -459,7 +603,7 @@ article .s_box ul {
 .mor-ship {
   width: 8rem;
   bottom: 5rem;
-  right: 32rem;
+  right: 40%;
   z-index: 9999;
   cursor: pointer;
 }
@@ -475,17 +619,7 @@ article .s_box ul {
 .mor-4 {
   opacity: 0;
 }
-/* @keyframes morsun {
-  0% {
-    transform: translateY(5%);
-  }
-  50% {
-    transform: translateY(-5%);
-  }
-  100% {
-    transform: translateY(5%);
-  }
-} */
+
 @keyframes ship {
   0% {
     transform: scale(1);

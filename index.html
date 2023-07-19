@@ -15,9 +15,14 @@
     <meta name="theme-color" content="#ffffff">
     <!--***** reset *****-->
     <link rel="stylesheet" href="./common/style/minireset.min.css">
+    <!--***** fonts css *****-->
+    <link rel="stylesheet" href="./common/style/fonts/fonts.css">
     <!--***** css *****-->
     <link rel="stylesheet" href="./index.css">
-    <!--***** js *****-->
+    <!--***** scroll triger*****-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/ScrollTrigger.min.js"></script>
+    <!-- js -->
     <script src="./common/style/jquery-3.7.0.min.js"></script>
     <script src="./common/style/jquery-ui.min.js"></script>
     <script defer src="./index.js"></script>
@@ -68,9 +73,9 @@
             <img src="./images/moon3.png" alt="#" class="moon-3 posi-3">
             <div class="intro">
                 <div class="intro-1 hei">
-                    <p>project</p>
-                    <p>skill</p>
-                    <p>about</p>
+                    <p class="p-1">project</p>
+                    <p class="none p-2">skill</p>
+                    <p class="none p-3">about</p>
                 </div>
                 <div class="intro-2 hei">
                     <p>jungbomi<br>Portpolio</p>
@@ -82,7 +87,7 @@
         <article>
             <!-- 4개 -->
             <!-- project에 키워드 -->
-            <div class="project wid">
+            <div class="project wid pro-1">
                 <div class="wrapper">
                     <div class="text_wrapper">
                         <h1>제주민속촌</h1>
@@ -91,13 +96,17 @@
                             <li>#반응형</li>
                             <li>#CSS</li>
                         </ul>
-                        <a href="#" class="btn">보러가기</a>
+                        <a href="#" class="btn">
+                            view
+                            <p>화살표</p>
+                        </a>
                     </div>
-                    <img src="./images/jejuminsocchon.png" alt="#">
+                    <h3>.</h3>
+                    <!-- <img src="./images/jejuminsocchon.png" alt="임시이미지"> -->
                     <!-- <img src="https://via.placeholder.com/400x600" alt="임시이미지"> -->
                 </div>
             </div>
-            <div class="project wid">
+            <div class="project wid pro-2">
                 <div class="wrapper">
                     <div class="text_wrapper">
                         <h1>mint-paper</h1>
@@ -106,14 +115,14 @@
                             <li>#자바스크립트</li>
                             <li>#스와이퍼</li>
                         </ul>
-                        <a href="#" class="btn">보러가기</a>
+                        <a href="#" class="btn">view <p>화살표</p></a>
                         <!-- 서브페이지랑 연결되게 -->
-                        <!-- <a href="https://team-oozz.github.io/team-oozz/" class="btn">보러가기</a> -->
+                        <!-- <a href="https://team-oozz.github.io/team-oozz/" class="btn">view</a> -->
                     </div>
-                    <img src="https://via.placeholder.com/500x500" alt="임시이미지">
+                    <h3>.</h3>
                 </div>
             </div>
-            <div class="project wid">
+            <div class="project wid pro-3">
                 <div class="wrapper">
                     <div class="text_wrapper">
                         <h1>project3</h1>
@@ -123,12 +132,12 @@
                             <li>#text</li>
                             <li>#text</li>
                         </ul>
-                        <a href="#" class="btn">보러가기</a>
+                        <a href="#" class="btn">view <p>화살표</p></a>
                     </div>
                     <img src="https://via.placeholder.com/500x500" alt="임시이미지">
                 </div>
             </div>
-            <div class="project wid">
+            <div class="project wid pro-4">
                 <div class="wrapper">
                     <div class="text_wrapper">
                         <h1>project4</h1>
@@ -138,7 +147,7 @@
                             <li>#text</li>
                             <li>#text</li>
                         </ul>
-                        <a href="#" class="btn">보러가기</a>
+                        <a href="#" class="btn">view <p>화살표</p></a>
                     </div>
                     <img src="https://via.placeholder.com/500x500" alt="임시이미지">
                 </div>
@@ -146,7 +155,7 @@
 
 
 
-            <div class="skill  wid  topjs skill1">
+            <div class="skill  wid  topjs skill1 trigger1">
                 <div class="s_box">
                     <h3 class="skill_flex_wid">HTML5 <br>& CSS3</h3>
                     <ul class="skill_flex_wid">
@@ -156,9 +165,9 @@
                     </ul>
                 </div>
             </div>
-            <div class="skill wid">
+            <div class="skill wid trigger2">
                 <div class="s_box">
-                    <h3 class="skill_flex_wid">JabaScript <br>& jQurey</h3>
+                    <h3 class="skill_flex_wid">JavaScript <br>& jQurey</h3>
                     <ul class="skill_flex_wid">
                         <li>ES6+ 문법</li>
                         <li>돔 제어</li>
@@ -168,7 +177,7 @@
                     깃은 버전관리 시스템  -->
                 </div>
             </div>
-            <div class="skill wid">
+            <div class="skill wid trigger3">
                 <div class="s_box">
                     <h3 class="skill_flex_wid">Git & GIthub</h3>
                     <ul class="skill_flex_wid">
@@ -178,7 +187,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="skill wid mor-js">
+            <div class="skill wid mor-js trigger4">
                 <div class="s_box">
                     <h3 class="skill_flex_wid">Tool</h3>
                     <ul class="skill_flex_wid">
@@ -196,7 +205,24 @@
     </main>
 
     <div class="morning">
-        <!-- <p>text</p> -->
+        <h1>CONTACT</h1>
+        <div class="mor-text-wrapper">
+            <div class="email-t mor-t1">
+                <p class="email-bg">.</p>
+                <a href="#">bomi2023y@gmail.com</a>
+            </div>
+            <div class="git-t mor-t1">
+                <p class="git-bt">.</p>
+                <a href="#">https://github.com/Jbomip</a>
+            </div>
+        </div>
+        <div class="mor-text-wrapper-1">
+            <h2>#초보 #퍼블리셔 #호기심 #도전</h2>
+            <h2>초보 "<span>퍼블리셔</span>" 정보미입니다</h2>
+            <!-- <h2>항상 배우려는 자세로</h2>
+            <h2>최선을 다해 임하겠습니다</h2> -->
+        </div>
+
         <img src="./images/mor-thesun.png" alt="#" class="mor-sun posi-2">
         <div class="mor-1">
             <img src="./images/mor-back1.png" alt="#" class="mor-back posi-2">

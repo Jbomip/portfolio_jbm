@@ -96,3 +96,126 @@ $(window).on("scroll", () => {
   console.log("2 prevScroll: ", prevScroll);
 });
 //
+$(window).on("scroll", () => {
+  const intro1 = $(".topjs").offset().top;
+  console.log(intro1);
+
+  if (scrollY > intro1) {
+    $(".p-1").addClass("none");
+    $(".p-2").removeClass("none");
+  } else {
+    $(".p-1").removeClass("none");
+    $(".p-2").addClass("none");
+  }
+});
+// gsap.timeline({
+//   scrollTrigger: {
+//     trigger: ".triger1",
+//     start: "center center ", //Animation start at this point
+//     end: "top 15%", //Animation end at this point
+//     markers: true,
+//     scrub: true,
+//     pin: true,
+//   },
+// });
+
+//
+gsap.from(".trigger1 h3", {
+  scrollTrigger: {
+    trigger: ".trigger1",
+    start: "top 600px",
+    end: "top 300px",
+    // markers: true,
+    scrub: true,
+    // pin: true,
+  },
+  opacity: 0,
+  x: -150,
+});
+gsap.from(".trigger1 ul", {
+  scrollTrigger: {
+    trigger: ".trigger1",
+    start: "top 600px",
+    end: "top 300px",
+    // markers: true,
+    scrub: true,
+    // pin: true,
+  },
+  opacity: 0,
+  x: 150,
+});
+
+gsap.from(".trigger2 h3", {
+  scrollTrigger: {
+    trigger: ".trigger2",
+    start: "top 600px",
+    end: "top 300px",
+    // markers: true,
+    scrub: true,
+    // pin: true,
+  },
+  opacity: 0,
+  x: -150,
+});
+gsap.from(".trigger2 ul", {
+  scrollTrigger: {
+    trigger: ".trigger2",
+    start: "top 600px",
+    end: "top 300px",
+    // markers: true,
+    scrub: true,
+    // pin: true,
+  },
+  opacity: 0,
+  x: 150,
+});
+
+gsap.from(".trigger3 h3", {
+  scrollTrigger: {
+    trigger: ".trigger3",
+    start: "top 600px",
+    end: "top 300px",
+    // markers: true,
+    scrub: true,
+    // pin: true,
+  },
+  opacity: 0,
+  x: -150,
+});
+gsap.from(".trigger3 ul", {
+  scrollTrigger: {
+    trigger: ".trigger3",
+    start: "top 600px",
+    end: "top 300px",
+    // markers: true,
+    scrub: true,
+    // pin: true,
+  },
+  opacity: 0,
+  x: 150,
+});
+
+gsap.from(".trigger4 h3", {
+  scrollTrigger: {
+    trigger: ".trigger4",
+    start: "top 600px",
+    end: "top 400px",
+    // markers: true,
+    scrub: true,
+    // pin: true,
+  },
+  opacity: 0,
+  x: -150,
+});
+gsap.from(".trigger4 ul", {
+  scrollTrigger: {
+    trigger: ".trigger4",
+    start: "top 600px",
+    end: "top 400px",
+    // markers: true,
+    scrub: true,
+    // pin: true,
+  },
+  opacity: 0,
+  x: 150,
+});
