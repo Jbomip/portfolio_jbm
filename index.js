@@ -97,7 +97,7 @@ $(window).on("scroll", () => {
 });
 //
 $(window).on("scroll", () => {
-  const intro1 = $(".topjs").offset().top;
+  const intro1 = $(".pro-4").offset().top;
   console.log(intro1);
 
   if (scrollY > intro1) {

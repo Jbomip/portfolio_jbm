@@ -465,7 +465,7 @@ article .project .btn:hover p {
 }
 .project:nth-of-type(1) h3 {
   background-size: 900px;
-  background: url(./images/jejuminsocchon.png) no-repeat 50% 50% / cover;
+  background: url(./images/title.jpg) no-repeat 50% 50% / cover;
 }
 .project:nth-of-type(2) h3 {
   background: url(./images/Mint-Festa-2023-list.png) no-repeat 20px 20px / cover;
