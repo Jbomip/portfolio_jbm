@@ -53,6 +53,10 @@ $(".mor-ship").on("click", () => {
   $(".mor-2").delay(600).animate({ opacity: 1 }, 100);
   $(".mor-3").delay(900).animate({ opacity: 1 }, 100);
   $(".mor-4").delay(1200).animate({ opacity: 1 }, 100);
+
+  $(".color1").delay(600).animate({ opacity: 0 }, 1000);
+  $(".color2").delay(600).animate({ opacity: 1 }, 1000);
+
   console.log("클릭함");
   $(".mor-sun").delay(250).animate({ top: 450, left: 800 }, 1300);
   $(".mor-ship").removeClass("ship-ani");

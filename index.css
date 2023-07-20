@@ -325,6 +325,7 @@ aside .intro-1 {
   margin-top: 2rem;
   font-family: "Angkor", cursive;
   font-size: 1.5rem;
+  text-transform: capitalize;
 }
 aside .intro-2 {
   margin-top: 2rem;
@@ -333,10 +334,12 @@ aside .intro-2 {
   background-color: #ffb629;
   width: 14rem;
   border-radius: 50px;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   text-align: left;
   font-family: "Kanit", sans-serif;
   font-weight: 800;
+  color: #221818;
+  text-transform: capitalize;
 }
 
 article {
@@ -390,40 +393,95 @@ article .project img {
   vertical-align: top;
 }
 article .project .btn {
-  font-size: 1rem;
+  font-size: 1.8rem;
   display: block;
   color: #fff;
   text-decoration: none;
   position: absolute;
   right: 10rem;
   bottom: 3rem;
-  padding: 20px 50px;
+  width: 10rem;
+  height: 4rem;
+  text-align: center;
+  line-height: 4rem;
   background: url(./images/articlebtn.png) no-repeat 50% / cover;
+}
+article .project .btn h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: "Pretendard", sans-serif;
+
+  transition: 0.5s;
 }
 article .project .btn p {
   position: absolute;
-  top: 0;
+  top: -15px;
   right: 8px;
   text-indent: -99999px;
   width: 2.5rem;
   background: url(./images/Arrow.png) no-repeat 50% 50% / contain;
   background-size: 20px;
 }
+article .project .btn:hover h4 {
+  text-shadow: 0 0 20px #ffff;
+}
 article .project .btn:hover p {
   animation: view 0.8s ease-in-out infinite alternate;
 }
-.project h3 {
-  text-indent: -9999px;
+.project .img-w {
+  position: relative;
   width: 500px;
   height: 500px;
-  background-color: #ffb629;
+  /* background-color: #ffb629; */
+  overflow: hidden;
 }
-.project:nth-of-type(1) h3 {
-  background-size: 900px;
-  background: url(./images/title.jpg) no-repeat 50% 50% / cover;
+.project .img-w img:nth-of-type(1) {
+  position: absolute;
+  width: 200px;
+  z-index: 99;
+  top: 6.5rem;
+  box-shadow: -8px 8px 9.9px rgba(0, 9px, 10px, 0.548);
 }
-.project:nth-of-type(2) h3 {
-  background: url(./images/Mint-Festa-2023-list.png) no-repeat 20px 20px / cover;
+.project .img-w img:nth-of-type(2) {
+  width: 400px;
+  position: absolute;
+  right: 0;
+}
+.project .video-wrapper {
+  width: 500px;
+  height: 500px;
+  /* background-color: violet; */
+  position: relative;
+  overflow: hidden;
+}
+.project .video-wrapper h5 {
+  text-indent: -9999px;
+  position: absolute;
+  transform: rotate(-10deg);
+  background-color: #1ddcdb;
+}
+.project .video-wrapper h5:nth-of-type(1) {
+  width: 40rem;
+  height: 24rem;
+  top: 2rem;
+  right: -12.8rem;
+}
+.project .video-wrapper h5:nth-of-type(2) {
+  width: 40rem;
+  height: 1.6rem;
+  bottom: 5.8rem;
+  right: -16rem;
+  box-shadow: inset -8px 8px 9.9px rgba(0, 0, 0, 0.548);
+}
+.project .video-wrapper video {
+  position: absolute;
+  top: 3rem;
+  right: -13rem;
+  transform: rotate(-10deg) scale(1.5);
+  background-color: #5d3299;
+  box-shadow: -5px 5.2px 9px rgba(0, 0, 0, 0.13),
+    -5px 10.7px 9px rgba(0, 0, 0, 0.12), -5px 17.4px 9px rgba(0, 0, 0, 0.131),
+    -5px 28.8px 9px rgba(0, 0, 0, 0.122), -10px 74px 76px rgba(0, 0, 0, 0.082);
 }
 
 @keyframes view {
@@ -478,7 +536,7 @@ article .s_box ul {
   flex-direction: column;
   font-size: 1.2rem;
   line-height: 1.8;
-  font-family: "Pretendard", serif;
+  font-family: "Pretendard", sans-serif;
   font-weight: 300;
 }
 article .skill h3 {
@@ -502,24 +560,25 @@ article .skill h3 {
   width: 30rem;
   position: absolute;
   bottom: 16.5%;
-  left: 1rem;
+  left: 4.5rem;
 }
 .morning h1 {
   position: absolute;
   font-size: 4rem;
   bottom: 25.5%;
-  left: 2rem;
+  left: 4rem;
   font-weight: 800;
   z-index: 9999;
   font-family: "Kanit", sans-serif;
 }
+
 .morning .mor-text-wrapper a {
   text-decoration: none;
   color: inherit;
   font-size: 2rem;
   transition: 0.5s;
   font-family: "Pretendard", serif;
-  font-weight: 500;
+  font-weight: 300;
 }
 .morning .mor-text-wrapper a:hover {
   transform: translate(30px);
@@ -549,12 +608,21 @@ article .skill h3 {
   position: absolute;
   z-index: 9999;
   bottom: 23.5%;
-  right: 20px;
+  right: 4rem;
   font-size: 2rem;
   text-align: right;
   font-family: "Pretendard", serif;
   line-height: 1.6;
 }
+.color1 {
+  opacity: 1;
+}
+
+.color2 {
+  color: #000000;
+  opacity: 0;
+}
+
 .mor-text-wrapper-1 span {
   font-weight: 800;
 }
