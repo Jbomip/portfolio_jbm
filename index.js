@@ -40,25 +40,6 @@ $(window).on("scroll", () => {
   } else {
     $(".moon-3").removeClass("active2-3");
   }
-
-  // const moon4 = $(".project:nth-of-type(2)").offset().top;
-  // console.log(moon4);
-  // let morJs = $(".mor-js").offset().top;
-  // console.log(scrollY);// 스크롤 값
-  // console.log(".mor-js"); // body 시작에서부터의 거리
-  // console.log($(".mor-js").height()); // footer의 높이
-  // console.log(document.documentElement.clientHeight); // 화면의 크기
-
-  // let result =
-  //   footerHeight -
-  //   $(".mor-js").height() -
-  //   document.documentElement.clientHeight;
-
-  // if (scrollY > result) {
-  //   $('.mor-2').addClass('on');
-  // } else {
-  //   $('.mor-2').removeClass('on');
-  // }
 });
 
 //
@@ -124,9 +105,7 @@ gsap.from(".trigger1 h3", {
     trigger: ".trigger1",
     start: "top 600px",
     end: "top 300px",
-    // markers: true,
     scrub: true,
-    // pin: true,
   },
   opacity: 0,
   x: -150,
@@ -136,9 +115,7 @@ gsap.from(".trigger1 ul", {
     trigger: ".trigger1",
     start: "top 600px",
     end: "top 300px",
-    // markers: true,
     scrub: true,
-    // pin: true,
   },
   opacity: 0,
   x: 150,
@@ -149,9 +126,7 @@ gsap.from(".trigger2 h3", {
     trigger: ".trigger2",
     start: "top 600px",
     end: "top 300px",
-    // markers: true,
     scrub: true,
-    // pin: true,
   },
   opacity: 0,
   x: -150,
@@ -161,9 +136,7 @@ gsap.from(".trigger2 ul", {
     trigger: ".trigger2",
     start: "top 600px",
     end: "top 300px",
-    // markers: true,
     scrub: true,
-    // pin: true,
   },
   opacity: 0,
   x: 150,
@@ -174,9 +147,7 @@ gsap.from(".trigger3 h3", {
     trigger: ".trigger3",
     start: "top 600px",
     end: "top 300px",
-    // markers: true,
     scrub: true,
-    // pin: true,
   },
   opacity: 0,
   x: -150,
@@ -186,9 +157,7 @@ gsap.from(".trigger3 ul", {
     trigger: ".trigger3",
     start: "top 600px",
     end: "top 300px",
-    // markers: true,
     scrub: true,
-    // pin: true,
   },
   opacity: 0,
   x: 150,
@@ -199,9 +168,7 @@ gsap.from(".trigger4 h3", {
     trigger: ".trigger4",
     start: "top 600px",
     end: "top 400px",
-    // markers: true,
     scrub: true,
-    // pin: true,
   },
   opacity: 0,
   x: -150,
@@ -211,9 +178,7 @@ gsap.from(".trigger4 ul", {
     trigger: ".trigger4",
     start: "top 600px",
     end: "top 400px",
-    // markers: true,
     scrub: true,
-    // pin: true,
   },
   opacity: 0,
   x: 150,
