@@ -485,6 +485,17 @@ article .project:nth-of-type(4) {
   margin-bottom: 20rem;
 }
 
+/* skill start  */
+.skill-start {
+  height: 1px;
+  width: 1rem;
+  text-indent: -9999px;
+  /* background-color: #ffb629; */
+  position: absolute;
+  z-index: 9999;
+  bottom: -16rem;
+}
+
 /* article .skill */
 
 article .skill {
@@ -665,4 +676,14 @@ article .skill h3 {
   100% {
     transform: scale(1);
   }
+}
+/* con start */
+.con-start {
+  position: absolute;
+  top: 10.2rem;
+  z-index: 9999;
+  width: 2rem;
+  height: 1px;
+  text-indent: -9999px;
+  /* background-color: #ffb629; */
 }

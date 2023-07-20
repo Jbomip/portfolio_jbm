@@ -231,7 +231,7 @@ $("#pro").on("click", (evt) => {
 $("#skill").on("click", (evt) => {
   evt.preventDefault();
 
-  const skill = $(".skill1").offset().top;
+  const skill = $(".skill-start").offset().top;
 
   scrollTo({
     top: skill,
@@ -241,9 +241,7 @@ $("#skill").on("click", (evt) => {
 $("#con").on("click", (evt) => {
   evt.preventDefault();
 
-  const con = $(".mor-cloud").offset().top;
-  const skillH = $(".skill").innerHeight();
-  console.log(skillH);
+  const con = $(".con-start").offset().top;
 
   scrollTo({
     top: con,
