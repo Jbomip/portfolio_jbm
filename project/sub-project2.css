@@ -121,11 +121,30 @@ header p {
 .tite-text img {
   width: 100%;
 }
-.wp-img {
+/* .wp-img {
   width: 50%;
   top: -1%;
   right: 7%;
+} */
+.wp-img {
+  position: absolute;
+  background-color: violet;
+  width: 50%;
+  top: 2%;
+  right: 7%;
 }
+.wp-img:hover .wp-img1 {
+  transition: 0.5s;
+  left: 1%;
+}
+.wp-img1 {
+  position: absolute;
+  left: 1%;
+}
+.wp-img2 {
+  position: absolute;
+}
+
 .tite-text h1 {
   color: #000000;
   position: absolute;
@@ -174,6 +193,14 @@ header p {
   background-image: url(./image2/title-allow.png);
   background-repeat: no-repeat;
   background-position: 87% 50%;
+}
+.circle-bor a:hover h3 {
+  animation: circle linear 1.5s infinite;
+}
+@keyframes circle {
+  100% {
+    transform-origin: 100% 0 rotate(45deg);
+  }
 }
 .circle-bor h3 {
   width: 215px;
