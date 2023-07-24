@@ -1,0 +1,87 @@
+@charset "utf-8";
+
+/* font-family: 'Poppins', 's-core-dream', cursive, sans-serif; */
+
+/* 'Poppins', 's-core-dream' */
+@import url(./common/fonts/fonts.css);
+
+/* 변수선언 */
+@import url(./common/variable.css);
+
+/*********** header  **********/
+
+header {
+  width: 100%;
+  height: 130px;
+
+  font-family: var(--font-family-en);
+  font-weight: 700;
+  font-size: var(--font-size-22);
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  mix-blend-mode: difference;
+}
+
+header .header-wrapper {
+  width: 93%;
+  height: 100%;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .header-wrapper h1 {
+  width: 20%;
+  height: 100%;
+  text-indent: -999999px;
+}
+
+header .header-wrapper h1 a {
+  display: block;
+  width: 100%;
+  min-width: 200px;
+  height: 100%;
+  background: url(./images/logo_mint.svg) no-repeat 0 50% / contain;
+  /* background: url(./images/logo_black.png) no-repeat 0 50% / contain; */
+  z-index: 9999;
+}
+
+header .header-wrapper .global-nav {
+  height: 130px;
+  display: flex;
+  align-items: center;
+}
+header .header-wrapper .global-nav li {
+  height: 100%;
+}
+header .header-wrapper .global-nav li a {
+  display: block;
+  height: 80px;
+  padding-left: 50px;
+  line-height: 130px;
+  text-align: right;
+  color: var(--point-color-m);
+}
+
+/* 메뉴 hover: 언더라인 생성 */
+
+header .header-wrapper .global-nav .under-line a::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 5px;
+  margin: -30px auto;
+  background-color: var(--point-color-m);
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+header .header-wrapper .global-nav .under-line:hover a::after {
+  transform-origin: left;
+  transform: scaleX(1);
+}

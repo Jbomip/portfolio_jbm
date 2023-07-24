@@ -1,0 +1,190 @@
+@charset 'utf-8';
+
+/* 'Poppins', 's-core-dream' */
+/* @import url(./common/fonts/fonts.css);
+
+/* 변수선언 */
+/* @import url(./common/variable.css); */
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: var(--point-color-y);
+}
+
+/********* header **********/
+header {
+  width: 100%;
+  margin-bottom: 100px;
+  transition: 1s;
+}
+header.scrollDown {
+  transform: translate(0, -160px);
+}
+
+.LineUp_logo {
+  width: 500px;
+  display: block;
+  margin: 200px auto;
+  margin-bottom: 120px;
+}
+
+main .upto {
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  bottom: 50px;
+  right: 70px;
+  z-index: 9999;
+}
+
+main .upto img {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+main .upto img:hover {
+  transform: scale(1.2) rotate(5deg);
+}
+
+/********* main *********/
+main section {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100vh;
+}
+
+/* bg 글자조정 */
+main .section1 {
+  background: url(./images/bg01.png) no-repeat 85% 200px;
+}
+
+main .section2 {
+  background: url(./images/bg02.png) no-repeat 15% 200px;
+}
+
+main .section2 .wrapper {
+  width: 100%;
+  justify-content: flex-end;
+}
+
+main .section3 {
+  background: url(./images/bg03.png) no-repeat 85% 200px;
+}
+
+main .section4 {
+  background: url(./images/bg04.png) no-repeat 15% 200px;
+}
+
+main .section4 .wrapper {
+  width: 100%;
+  justify-content: flex-end;
+}
+
+/* bg 끝! */
+
+main section figure {
+  margin: 40px;
+  transition: 0.3s;
+}
+
+main section figure figcaption {
+  text-align: center;
+  color: var(--point-color-o);
+  font-size: var(--font-size-23);
+  font-weight: bold;
+  /* 피그마 폰트는 엑스트라 볼드인데 여기는 볼드밖에 안되는듯 */
+}
+
+main section figure:hover {
+  transform: scale(1.05);
+}
+
+main section .mint-wrap,
+main section .orange-wrap {
+  flex-wrap: wrap;
+  width: 1200px;
+  z-index: 999;
+  align-items: center;
+  margin: 0 200px;
+}
+
+main section .orange-wrap {
+  justify-content: flex-end;
+}
+
+main section img {
+  width: 300px;
+}
+
+main .mint {
+  background-color: var(--point-color-m);
+}
+
+/***** 슬라이드 영역 움직임 값 *****/
+.view-box {
+  /* 박스영역 */
+  width: 100%;
+  height: 100px;
+  background: url(./images/bg00.png) no-repeat 10% / cover;
+  margin-top: -10px;
+  overflow: hidden;
+}
+
+/* 애니메이션 값 */
+.slide-box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  animation: flowText 8s linear infinite;
+}
+
+@keyframes flowText {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* 애니메이션 값 끝! */
+.view-box .slide-item {
+  font-family: var(--font-family-en);
+  text-align: center;
+  width: 550px;
+  height: 100px;
+  line-height: 100px;
+  font-size: var(--font-size-60);
+  font-weight: bold;
+  color: var(--point-color-y);
+}
+
+.slide-item.italic {
+  font-style: italic;
+  color: #fff;
+  width: 400px;
+  font-size: var(--font-size-70);
+}
+
+/***** 슬라이드 움직임 값 끝! *****/
+
+.flex {
+  display: flex;
+}
+
+/* .box-hidden */
+.section-hidden {
+  margin: 0;
+  height: 70vh;
+}

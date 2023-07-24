@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Map</title>
+  <!-- reset -->
+  <link rel="stylesheet" href="../common/reset.css" />
+
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="120x120" href="../common/favicon/apple_touch_icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../common/favicon/favicon_32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../common/favicon/favicon_16x16.png" />
+  <link rel="icon" type="image/png" sizes="144x144" href="../common/favicon/android_chrome_144x144.png" />
+  <link rel="icon" type="image/png" sizes="150x150" href="../common/favicon/mstile_150x150.png" />
+
+  <!-- og -->
+  <meta property="og:title" content="Mint Festa 2023" />
+  <meta property="og:description" content="HAVE A NICE TRIP 2023 MAP PAGE" />
+  <meta property="og:image" content="https://team-oozz.github.io/team-oozz/images/og-img.jpg" />
+  <meta property="og:url" content="https://team-oozz.github.io/team-oozz" />
+
+  <!-- fonts -->
+  <link rel="stylesheet" href="../common/fonts/fonts.css" />
+
+  <!-- 공통 css -->
+  <link rel="stylesheet" href="../common/variable.css" />
+
+  <!-- jh header css -->
+  <link rel="stylesheet" href="./header-style.css" />
+
+  <!------------ hk footer-style 링크 ----------->
+  <link rel="stylesheet" href="../footer-style.css" />
+
+  <!-- sy Map css -->
+  <link rel="stylesheet" href="./map.css" />
+
+  <!-- hk js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+  <script defer src="../ScrollTrigger.min.js"></script>
+
+  <!-- 인터넷 긁어온거 -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+  <!-- jquery js 파일 -->
+  <script src="../common/jquery-3.7.0.min.js"></script>
+
+  <!-- hk footer js -->
+  <script defer src="../footer-script.js"></script>
+
+  <!-- sy Map js -->
+  <script defer src="./map.js"></script>
+</head>
+
+<body style="overflow-x: hidden">
+  <!-- sy map html -->
+  <!-------- header jh 블랜딩모드, 호버이벤트 ---------->
+  <header>
+    <div class="header-wrapper">
+      <h1 class="logo"><a href="https://team-oozz.github.io/team-oozz">민트페이퍼로고</a></h1>
+      <menu class="global-nav">
+        <li class="under-line">
+          <a href="https://team-oozz.github.io/team-oozz">HOME</a>
+        </li>
+        <li class="under-line">
+          <a href="https://team-oozz.github.io/team-oozz/lineup/lineup">LINE UP</a>
+        </li>
+        <li class="under-line">
+          <a href="#">MAP</a>
+        </li>
+        <li class="under-line">
+          <a href="https://team-oozz.github.io/team-oozz/about/about">ABOUT</a>
+        </li>
+      </menu>
+    </div>
+  </header>
+
+  <main>
+    <img class="Map_logo" src="./images/MAP.svg" alt="map 로고 이미지입니다" />
+
+    <section class="section1">
+      <img src="./images/map-img01.png" alt="1층 지도 이미지입니다. (나중에 변경해야 합니다)" />
+      <img src="./images/map-img02.png" alt="2층 지도 이미지입니다. (나중에 변경해야 합니다)" />
+    </section>
+    <section class="section2">
+      <div class="icon-text flex">
+        <figure>
+          <img src="./images/icon-img01.png" alt="티켓현장 확인 아이콘입니다" />
+          <figcaption>
+            <h1>티켓 현장확인</h1>
+            <p>TICKET</p>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="./images/icon-img02.png" alt="손목밴드 교환 아이콘입니다" />
+          <figcaption>
+            <h1>손목밴드 교환</h1>
+            <p>WRISTBAND</p>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="./images/icon-img03.png" alt="인포메이션 아이콘입니다" />
+          <figcaption>
+            <h1>인포메이션</h1>
+            <p>INFORMATIO</p>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="./images/icon-img04.png" alt="의료부스 아이콘입니다" />
+          <figcaption>
+            <h1>의료부스</h1>
+            <p>EMERGENCY</p>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="./images/icon-img05.png" alt="에스컬레이터 아이콘입니다" />
+          <figcaption>
+            <h1>에스컬레이터</h1>
+            <p>ESCALATOR</p>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="./images/icon-img06.png" alt="포토존 아이콘입니다" />
+          <figcaption>
+            <h1>포토존</h1>
+            <p>PHOTO ZONE</p>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="./images/icon-img07.png" alt="취식존 아이콘입니다" />
+          <figcaption>
+            <h1>취식존</h1>
+            <p>FOOD ZONE</p>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="./images/icon-img08.png" alt="MD, 이벤트 아이콘입니다" />
+          <figcaption>
+            <h1>MD, 이벤트</h1>
+            <p>MD, EVENT</p>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="./images/icon-img09.png" alt="물품보관소 아이콘입니다" />
+          <figcaption>
+            <h1>물품보관소</h1>
+            <p>LUGGAGE STORAGE</p>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="./images/icon-img10.png" alt="화장실 아이콘입니다" />
+          <figcaption>
+            <h1>화장실</h1>
+            <p>RESTROOM</p>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+    <section class="section3">
+      <ul class="korea">
+        <li>
+          <img src="./images/li-after.png" alt="목록의 장식 동그라미 입니다" />
+          2층 로비에서 모바일 티켓 확인과 손목밴드 착용 후에만 입장이
+          가능합니다.
+        </li>
+        <li>
+          <img src="./images/li-after.png" alt="목록의 장식 동그라미 입니다" />
+          2층 Departures[입구], Arrivals[출구]와 1층 공연장은 에스컬레이터를
+          통해 이동합니다.
+        </li>
+        <li>
+          <img src="./images/li-after.png" alt="목록의 장식 동그라미 입니다" />
+          스테이지와 F&B부스를 비롯한 편의시설과 부스는 모두 1층 공연장에
+          마련되어 있습니다.
+        </li>
+        <li>
+          <img src="./images/li-after.png" alt="목록의 장식 동그라미 입니다" />공연장 내에는 소형 가방과 500ml PET만 반입이 가능합니다.
+        </li>
+        <li>
+          <img src="./images/li-after.png" alt="목록의 장식 동그라미 입니다" />
+          2개의 스테이지는 스텐딩 관람이며, 모든 구역에는 의자와 돗자리 반입이
+          불가합니다.
+        </li>
+        <li>
+          <img src="./images/li-after.png" alt="목록의 장식 동그라미 입니다" />의자와 테이블이 있는 취식존과 휴식존이 준비됩니다.
+        </li>
+      </ul>
+      <ul class="english">
+        <li>
+          <img src="./images/li-after.png" alt="목록의 장식 동그라미 입니다" />
+          You can enter only after verifying your mobile ticket and wearing a
+          wristband at the lobby on the second floor.
+        </li>
+        <li>
+          <img src="./images/li-after.png" alt="목록의 장식 동그라미 입니다" />
+          You can move between second floor[Departures[entrance],
+          Arrivals[exit]] and first floor[festival site] by escalator.
+        </li>
+        <li>
+          <img src="./images/li-after.png" alt="목록의 장식 동그라미 입니다" />
+          Stages, convenience facilities[including F&B booth] and other booths
+          will be located on the first floor of the festival site.
+        </li>
+        <li>
+          <img src="./images/li-after.png" alt="목록의 장식 동그라미 입니다" />
+          Only small sized bag and plastic bottle under 500mL can be brought
+          into the festival site.
+        </li>
+        <li>
+          <img src="./images/li-after.png" alt="목록의 장식 동그라미 입니다" />
+          Both stages will be operated as standing zone only. Therefore chairs
+          and mats are prohibited in all areas.
+        </li>
+        <li>
+          <img src="./images/li-after.png" alt="목록의 장식 동그라미 입니다" />
+          Tables and chairs will be provided at the food zone. Refresh zone
+          will be provided seperate from the food zone
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- hk footer -->
+  <div class="footer-moving">
+    <footer>
+      <div class="box-left">
+        <img src="./images/footer-mini-logo.svg" alt="mintpaper_logo" />
+        <ul>
+          <li><a href="#">ABOUT Mint Paper</a></li>
+          <li><a href="#">CONTACT US</a></li>
+          <li><a href="#">FAMILY SITES</a></li>
+        </ul>
+        <p>
+          ⓒ 2021 MINT PAPER ALL Rights Reserved ｜ 이용약관 ｜ 개인정보
+          취급방침
+        </p>
+      </div>
+      <img src="./images/github-logo.svg" alt="icon_git" class="icon-git" />
+      <ul class="team">
+        <li>
+          <span>팀‘OOZZ’ </span><a href="https://github.com/team-oozz" target="_blank">https://github.com/team-oozz</a>
+        </li>
+        <li>
+          <span>정보미 </span><a href="https://github.com/Jbomip" target="_blank">https://github.com/Jbomip</a>
+        </li>
+        <li>
+          <span>안소영 </span><a href="https://github.com/youngsoAN" target="_blank">https://github.com/youngsoAN</a>
+        </li>
+        <li>
+          <span>이지희 </span><a href="https://github.com/Leejihi" target="_blank">https://github.com/Leejihi</a>
+        </li>
+        <li>
+          <span>정희경 </span><a href="https://github.com/JungHeekyung" target="_blank">https://github.com/JungHeekyung</a>
+        </li>
+      </ul>
+    </footer>
+  </div>
+</body>
+
+</html>

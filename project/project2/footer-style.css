@@ -1,0 +1,153 @@
+@charset "utf-8";
+body {
+  margin: 0;
+}
+
+/*----- hk section3 -----*/
+.footer-wrapper {
+  width: 100%;
+  height: 159.9vw;
+  background: url(./images/s3-bg-01.png) no-repeat 50% 50% / cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+.footer-wrapper .section3 .s3-title {
+  width: 51.04vw;
+  transform: translateX(57%);
+  margin-bottom: 3.13vw;
+  position: relative;
+}
+.footer-wrapper .section3 .date1 {
+  position: relative;
+}
+.footer-wrapper .section3 .date2 {
+  position: relative;
+}
+.footer-wrapper .section3 .date-wrap {
+  width: 57.29vw;
+  display: flex;
+  justify-content: space-between;
+  margin: 7vw 0 2.6vw 19.79vw;
+  transform: translateX(5%);
+}
+.footer-wrapper .section3 .date-wrap h2 {
+  font-family: var(--font-family-en);
+  font-size: var(--font-size-50);
+  font-weight: 900;
+  text-align: center;
+  font-style: italic;
+  color: #fff;
+  text-shadow: -2px 0 #000, 0 2px #000, 2px 0 #000, 0 -2px #000, 5px 5px 0 #000,
+    4px 4px 0 #000, 2px 2px 0 #000, 1px 1px 0 #000;
+  margin-bottom: 0.05vw;
+}
+.footer-wrapper .section3 .date-wrap p {
+  font-family: var(--font-family-en);
+  font-size: var(--font-size-32);
+  font-weight: 700;
+  letter-spacing: -1px;
+  text-align: center;
+  line-height: 38px;
+  color: var(--point-color-o);
+  margin-bottom: 1.04vw;
+}
+.footer-wrapper .section3 .date-wrap p span {
+  display: block;
+}
+.footer-wrapper .section3 .timetable {
+  width: 93.75vw;
+  margin-left: 10.42vw;
+  margin-bottom: 11.46vw;
+}
+/*----- //section3 -----*/
+
+/*----- hk footer -----*/
+footer {
+  width: 93.23vw;
+  height: 30.47vw;
+  color: #fff;
+  margin: 0 auto;
+  border-radius: 40px 40px 0 0;
+  background: #ed5029 url(./images/f_title_01.svg) no-repeat 50% 10% /90%;
+  font-family: var(--font-family-ko);
+  font-size: 1rem;
+  font-weight: 400;
+
+  display: flex;
+  justify-content: space-between;
+
+  position: relative;
+  z-index: 999;
+}
+
+footer .box-left {
+  margin: 15.36vw 0 0 7.29vw;
+}
+footer .box-left img {
+  width: 15.63vw;
+}
+footer .box-left ul {
+  display: flex;
+  margin-top: 1.04vw;
+  font-family: var(--font-family-en);
+  font-weight: 600;
+  padding: 0;
+}
+footer .box-left ul li {
+  margin-right: 1.56vw;
+}
+footer .box-left ul li a {
+  position: relative;
+}
+footer .box-left ul li:nth-child(1) a::after,
+footer .box-left ul li:nth-child(2) a::after {
+  content: "";
+  width: 1px;
+  height: 12px;
+  background-color: #fff;
+  position: absolute;
+  top: 5px;
+  right: -15px;
+}
+footer .box-left p {
+  margin-top: 40px;
+  font-size: 13px;
+  opacity: 0.5;
+  font-weight: 100;
+}
+
+footer .icon-git {
+  width: 47.5px;
+  height: 303px;
+  position: absolute;
+  right: 470px;
+  bottom: 0;
+}
+footer .team {
+  margin-top: 295px;
+  font-size: 14px;
+  line-height: 35px;
+  position: absolute;
+  right: 140px;
+  bottom: 105px;
+  word-spacing: 10px;
+}
+footer .team li:nth-child(1) {
+  line-height: 60px;
+  letter-spacing: 1px;
+  word-spacing: 4px;
+}
+footer .team li:nth-child(2),
+footer .team li:nth-child(3),
+footer .team li:nth-child(4),
+footer .team li:nth-child(5) {
+  text-indent: 20px;
+}
+footer .team li span {
+  font-weight: 600;
+}
+footer .team li a:hover {
+  text-decoration: underline;
+}
