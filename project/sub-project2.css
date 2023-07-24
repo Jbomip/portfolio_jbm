@@ -1,0 +1,228 @@
+@charset "utf-8";
+/* font-family: 'IBM Plex Mono', monospace; regular 400 */
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap");
+/* font-family: 'Inter', sans-serif; medium 500,semi-bold 600 bold 700 */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0b0f1c;
+  color: #ffff;
+}
+/* header */
+
+header {
+  z-index: 999;
+  position: fixed;
+  height: 4rem;
+  width: 100%;
+  border-bottom: 1px #fff solid;
+  box-sizing: border-box;
+  opacity: 0;
+  transition: 0.2s;
+  background-color: #000000;
+}
+.none {
+  opacity: 1;
+}
+.bor {
+  border-color: #fff;
+}
+
+header ul {
+  position: absolute;
+  right: 5%;
+  top: -1;
+  display: flex;
+  font-size: 1.8rem;
+  padding: 0;
+  font-family: "Kanit", sans-serif;
+  font-weight: 600;
+}
+header ul a {
+  cursor: pointer;
+  width: 8rem;
+  height: 4rem;
+  line-height: 3.5rem;
+  text-align: center;
+  transition: 0.2s;
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 4rem;
+  text-decoration: none;
+  color: inherit;
+  padding: 0 1.5rem;
+}
+header ul a:after {
+  position: absolute;
+  top: 3rem;
+  left: 11.5%;
+  display: block;
+  content: "";
+  width: 80%;
+  height: 8px;
+  background-color: #fff;
+  background-color: #000000;
+  transform: scaleX(0);
+  transition: transform 380ms ease-in-out;
+}
+
+header ul a:hover {
+  color: #000000;
+  background-color: #fff;
+}
+header ul a:hover:after {
+  transform: scaleX(1);
+}
+header p {
+  position: absolute;
+  left: 5%;
+  width: 3.5rem;
+  height: 3.5rem;
+  text-indent: -9999px;
+  background: url(../images/logo.png) no-repeat 50% 115%;
+  background-size: 100%;
+}
+/* ----- title ----- */
+.title .pos-t {
+  position: absolute;
+}
+.circle-b {
+  border: 3px #01c2c1 solid;
+  width: 1025px;
+  height: 1025px;
+  border-radius: 50%;
+  top: -20%;
+  left: -10%;
+}
+.bor-b {
+  width: 1000px;
+  height: 1000px;
+  border: #01c2c1 3px solid;
+  transform: rotate(140deg);
+  top: 15%;
+  right: -45%;
+}
+.title {
+  position: relative;
+  height: 100vh;
+  color: #000000;
+  background-color: #ffff;
+  overflow: hidden;
+}
+.tite-text {
+  top: 6%;
+  left: 3%;
+  /* background-color: tomato; */
+  /* width: 3rem; */
+}
+.tite-text img {
+  width: 100%;
+}
+.wp-img {
+  width: 50%;
+  top: -1%;
+  right: 7%;
+}
+.tite-text h1 {
+  color: #000000;
+  position: absolute;
+  color: #ffff;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 45px;
+  text-align: right;
+  line-height: 0.7;
+  top: 40%;
+  right: 23%;
+  text-transform: uppercase;
+}
+.tite-text span {
+  font-size: 20px;
+}
+.title ul {
+  font-size: 33px;
+  font-family: "IBM Plex Mono";
+  font-weight: 400;
+  border-left: 3px #01c2c1 solid;
+  padding-left: 10px;
+  top: 47%;
+  left: 9%;
+}
+.circle-bor {
+  /* background-color: tomato; */
+  position: relative;
+  left: 20%;
+  top: 70%;
+}
+.circle-bor h2 {
+  position: absolute;
+  top: 6%;
+  right: 3%;
+  background-color: #01c2c1;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 180px;
+  font-size: 33px;
+  color: #ffff;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  background-image: url(./image2/title-allow.png);
+  background-repeat: no-repeat;
+  background-position: 87% 50%;
+}
+.circle-bor h3 {
+  width: 215px;
+  height: 215px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 2px solid #01c2c1;
+}
+.site-bg {
+  background-color: slategrey;
+  width: 55%;
+  height: 73%;
+  top: 17%;
+  /* left: 38%; */
+  right: 6%;
+  z-index: 99;
+}
+.bg-wh {
+  width: 1000px;
+  height: 650px;
+}
+
+.site-bg-bor {
+  box-sizing: border-box;
+  top: 21%;
+  /* left: 40%; */
+  right: 4%;
+  z-index: 9;
+  border: 4px solid #01c2c1;
+  background-color: #fff;
+}
+
+/* .title p {
+  font-size: 9rem;
+  font-style: italic;
+  top: 1%;
+  line-height: 130px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
+.title p:nth-of-type(1) {
+  color: #01c2c1;
+  z-index: 99;
+  right: 11.8%;
+}
+.title p:nth-of-type(2) {
+  color: #ffb800;
+  z-index: 9;
+  right: 11%;
+} */
+/* text-shadow로는 inset이 안먹힘...쩔수없지 이미지로 ㄱㄱㄱ */

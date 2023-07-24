@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>project2-설명</title>
+    <!--***** reset ***** -->
+    <link rel="stylesheet" href="../common/style/minireset.min.css">
+    <!--***** font *****-->
+    <!--   font-family: "Pretendard"; -->
+    <link rel="stylesheet" href="../common/style/fonts/fonts.css">
+    <!-- css -->
+    <link rel="stylesheet" href="./sub-project2.css">
+    <script src="../common/style/jquery-3.7.0.min.js"></script>
+    <script defer src="./sub-project2.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="./index.html">
+            <p>.</p>
+        </a>
+        <ul>
+            <li><a href="#" id="pro">project</a></li>
+            <li><a href="#" id="skill">skill</a></li>
+            <li><a href="#" id="con">contact</a></li>
+        </ul>
+    </header>
+    <div class="title">
+        <div class="circle-b pos-t"></div>
+        <div class="bor-b pos-t"></div>
+        <img src="./image2/webportpoilo.png" alt="#" class="pos-t wp-img">
+        <!-- <p class="pos-t">web portpoilo</p>
+        <p class="pos-t">web portpoilo</p> -->
+        <div class="title-txt">
+            <div class="tite-text pos-t">
+                <h1>mint-paper<br><span>have a nice trip 2023</span></h1>
+                <img src="./image2/title-text.png" alt="#">
+            </div>
+        </div>
+        <ul class="pos-t">
+            <li>#team-project</li>
+            <li>#JavaScript</li>
+            <li>#gitOrganization</li>
+            <li>#Swiper</li>
+        </ul>
+        <div class="site-bg bg-wh pos-t"></div>
+        <div class="site-bg-bor bg-wh bor pos-t"></div>
+        <div class="circle-bor pos-t">
+            <h3 class="h2-bor"></h3>
+            <a href="#">
+                <h2>GO!</h2>
+            </a>
+        </div>
+    </div>
+    <div class="box bx1">
+        <h1>overview</h1>
+        <li><span>팀명</span> : ㅇㅇㅈㅈ(oozz)</li>
+        <li><span>팀원</span> : 이지희,정희경,안소영(리더),정보미(깃)</li>
+        <li>작업기간 : 23.06.30~23.07.10</li>
+    </div>
+    <div class="box bx2">
+        <h1>진행과정</h1>
+        <ol>
+            <li>팀 결성 및 프로젝트 시작, 진행활 웹 방향성 논의</li>
+            <li>컨셉 결정 - (키워드: 여행, 페스티벌 / 포인트: 컬러 & 일러스트)</li>
+            <li>스타일 가이드 기준 작성</li>
+            <li>퍼블리싱 가이드 라인 기준 작성</li>
+            <li>디자인 진행</li>
+            <li>퍼블리싱 가이드 라인 팀 회의 거쳐서 내용 보안</li>
+            <li>역활 분담 및 코딩 시작 - (각 영역에 해당하는 구조, 스타일값 완료)</li>
+            <li>js, jQueury 분석, 각 영역에 연결 시작</li>
+            <li>메인 페이지 각자 작업한 3부분 합치는 과정에서 수정 및 오류 발생, 수정작업 진행 </li>
+            <li>피드백 수정 및 최종완성 </li>
+        </ol>
+    </div>
+    <div class="box bx3">
+        <h1>담당업무</h1>
+        <ul>
+            <li>깃허브(git organization) 관리</li>
+            <li>메인 중간 section2 내적 디자인, html, css, js 작성</li>
+            <li>fonts.css 웹폰트 & various.css 공통변수 파일 작성, 관리</li>
+        </ul>
+    </div>
+    <div class="box bx4">
+        <h1>퍼블리싱</h1>
+        <div class="btn">
+            <p>퍼블리싱 가이드라인</p>
+        </div>
+        <ul>
+            <li>swiper를 이용한 슬라이드 이미지 구현
+                <ul>
+                    <li>js</li>
+                </ul>
+                <ul>
+                    <li>일정 시간이 지날때 마다 슬라이드가 하나씩 넘어감
+                        <br>- autoplay : {delay:2500}(2.5s) 추가
+                    </li>
+                    <li>슬라이드가 연속해서 돌아감
+                        <br> - loop : true 추가
+                    </li>
+                    <li>보이는 슬라이드 개수 4개
+                        <br> - .swiper-button-next, .swiper-botton-prev
+                        영역 지정 후 background-image 적용
+                    </li>
+                </ul>
+            </li>
+            <li>슬라이드를 클릭하면 화면이 위로 올라감
+                <ul>
+                    <li>js</li>
+                </ul>
+                <ul>
+                    <li>적정 박스에 offset top부분을 선언
+                        <br>클릭시 scrollTo 선언 위치
+                        <br>부드럽게 올라가도록 behavior : ”smooth”추가
+                    </li>
+                </ul>
+            </li>
+            <li>슬라이드 클릭시 위에 내용이 클릭한 내용으로 바뀜
+                <ul>
+                    <li><span>html</span>처음칸 제외 나머지 칸에 클래스 none 추가</li>
+                    <li><span>css</span>클래스 none display:none, 클래스 active display:block 추가</li>
+                    <li><span>js</span>클릭한 부분에 addClass(“active”) 나머지 removeClass(“active”)</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="box bx5">
+        <h1>문제 & 해결</h1>
+        <ul>
+            <li>슬라이드 클릭시 위에 내용이 클릭한 내용으로 바뀜부분에서</li>
+            <ul>
+                <li>
+                    <p>문제점</p>
+                    <p>display: block을 주니 구조가 무너짐</p>
+                    <p>어려웠던 점</p>
+                    <p>클래스 active만 주고 다른 슬라이드를
+                        누르니 기존 칸이 사라지지않음 </p>
+                    <p>다른 칸을 누르면 처음 칸이 사라지지 않음 </p>
+                </li>
+                <li>
+                    <p>해결</p>
+                    <p>클래스 none의 하위자식을 감싸주는 부모를 만듦</p>
+                    <p>해결</p>
+                    <p>클릭시에 나머지 칸에 모두 removeClass(“active”)를
+                        추가해줌</p>
+                    <p>다른칸 클릭시 처음칸에 removeClass(“active”) 후
+                        addClass(“none”)을 추가해줌</p>
+                </li>
+            </ul>
+        </ul>
+    </div>
+    <div class="box bx6">
+        <h1>프로젝트결과</h1>
+        <ul>
+            <li>레퍼런스 사이트와 리디자인 사이트의 내용배치와 디자인이 조화롭게
+                된 것 같고, 만들고자 한 기능들 대부분이 구현되었습니다.</li>
+            <li>이해하지 못 한 부분과 모르는 부분은 바로바로 팀원분들과 소통하여
+                해결하였고, 각자 자신이 할 수 있는 부분으로 역할을 나누었습니다
+                그 덕분에 기간안에 밀리지않고 완성할 수 있었습니다
+                깃허브는 꼬이지 않게 서로서로 소통하며 관리하였습니다.</li>
+        </ul>
+    </div>
+    <div class="box bx7">
+        <h1>부족한점</h1>
+        <ul>
+            <li>section2 가수사진을 클릭하면 내용이 나오게 하는 부분의
+                js를 능력이 부족해 짧게 정리를 못 한것</li>
+            <li>사이드 메뉴에서 다른 페이지를 갔다가 홈으로 다시오면
+                타임 테이블 부분에 생기는 목록이 내려가는 않는 것을 해결하지 못한 것</li>
+            <li>
+                다소 과한 효과들</li>
+        </ul>
+    </div>
+    <div class="box bx8">
+        <h1>개인리뷰</h1>
+        <ul>
+            <li>디자인 감이 아직 없는데 팀원분이 조정해 준 것을 보고 어떻게
+                해야 하는지 조금 알 수 있었다</li>
+            <li>
+                웹사이트를 만들 레퍼런스 사이트를 찾을 때 항상 쉬운 것만을
+                찾았었는데 팀프로젝트를 하면서 어려운 것에 도전했다.
+                할 수 있을까 한 부분을 해내면서 자신감이 생겼다. </li>
+            <li>손이 느려서 seciton2 내적인 부분밖에 하지 못했고, js부분이
+                숙지가 안 되어서 주먹구구식으로 한 게 마음에 걸린다.
+                공부를 열심히 해야겠다고 느꼈다.</li>
+            <li>
+                팀프로젝트를 하면서 팀원 개개인의 능력들이 다양해 같이하며 나온
+                결과물을 보고 너무 재미있었다
+                팀프로젝트의 중요성을 알게 되는 시간이였다.</li>
+        </ul>
+    </div>
+    <div class="view-btn">
+        <p>view site</p>
+    </div>
+    <div class="footer">
+        <h2>contact</h2>
+        <p>https://github.com/Jbomip,</p>
+        <p>bomi2023y@gmail.com</p>
+    </div>
+
+</body>
+
+</html>
