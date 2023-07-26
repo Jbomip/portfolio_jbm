@@ -1,8 +1,10 @@
 @charset "utf-8";
 @import url(//fonts.googleapis.com/earlyaccess/jejuhallasan.css);
+/*  font-family: "Pretendard"; */
 body {
   margin: 0;
   padding: 0;
+  font-family: "Pretendard", sans-serif;
 }
 
 header {
@@ -57,6 +59,7 @@ header .ul2 {
   width: 100%;
   display: none;
 }
+
 header .ul2 li {
   width: 100%;
 }
@@ -246,11 +249,11 @@ aside .txt section h2 {
   /* width: 70%; */
   font-size: 1rem;
   line-height: 1.8rem;
-  font-family: "Nanum Gothic", sans-serif;
 }
 aside .txt section .h21 {
   /* width: 95%; */
   width: 80%;
+  font-weight: 300;
   /* margin: 20px; */
 
   /* background-color: violet; */

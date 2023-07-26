@@ -56,15 +56,15 @@ header ul a {
   height: 4rem;
   text-decoration: none;
   color: inherit;
-  padding: 0 1.5rem;
+  padding: 0 3rem;
 }
 header ul a:after {
   position: absolute;
   top: 3rem;
-  left: 11.5%;
+  left: 21.5%;
   display: block;
   content: "";
-  width: 80%;
+  width: 60%;
   height: 8px;
   background-color: #fff;
   background-color: #000000;
@@ -286,6 +286,63 @@ header p {
   border: 4px solid #01c2c1;
   background-color: #fff;
 }
+.title .pos-t li {
+  position: relative;
+}
+
+.title .pos-t li:after {
+  position: absolute;
+  top: 1rem;
+  left: 0;
+  display: block;
+  content: "";
+  width: 70%;
+  height: 1.65rem;
+  background-color: #ffb70060;
+  transform: scaleX(0);
+  transition: transform 380ms ease-in-out;
+  transform-origin: 0% 0%;
+}
+.title .pos-t li:nth-of-type(1):after {
+  width: 88%;
+}
+.title .pos-t li:nth-of-type(2):after {
+  width: 75%;
+}
+.title .pos-t li:nth-of-type(3):after {
+  width: 105%;
+}
+.title .pos-t li:nth-of-type(4):after {
+  width: 50%;
+}
+.title .pos-t li:hover:after {
+  transform: scaleX(1);
+  transform-origin: 0% 50%;
+}
+/*
+
+
+header ul a:after {
+  position: absolute;
+  top: 3rem;
+  left: 11.5%;
+  display: block;
+  content: "";
+  width: 80%;
+  height: 8px;
+  background-color: #fff;
+  background-color: #000000;
+  transform: scaleX(0);
+  transition: transform 380ms ease-in-out;
+}
+
+header ul a:hover {
+  color: #000000;
+  background-color: #fff;
+}
+header ul a:hover:after {
+  transform: scaleX(1);
+} */
 
 /* .title p {
   font-size: 9rem;
@@ -310,13 +367,17 @@ header p {
   /* background-color: violet; */
   width: 75%;
   margin: 0 auto;
-  padding: 180px 0;
+  padding: 130px 0;
   font-size: 18px;
   font-family: "Pretendard";
   font-weight: 300;
   border-bottom: #ffa339 1px solid;
   display: flex;
   justify-content: space-between;
+}
+.bx1 {
+  margin-top: 1px;
+  border-top: #ffa339 2px solid;
 }
 .box h1 {
   font-size: 35px;
@@ -430,6 +491,9 @@ ol {
   padding-bottom: 1.5rem;
   width: 70%;
 }
+.box .f-flex-ul2 li {
+  margin-bottom: 10px;
+}
 .ul-after-1 li {
   position: relative;
 }
@@ -461,6 +525,9 @@ ol {
 .box .ul-wid {
   width: 60%;
 }
+.box .ul-3 li {
+  margin-bottom: 10px;
+}
 /* bx5 */
 .box .ul-wid2 {
   width: 70%;
@@ -469,7 +536,7 @@ ol {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin-top: 0.5rem;
+  margin-top: 2.5rem;
 }
 .bx5 .ul-text li {
   width: 45%;
@@ -486,8 +553,8 @@ ol {
   width: 2rem;
   height: 2rem;
   background-color: tomato;
-  right: -5%;
-  top: 370%;
+  right: -3.35%;
+  top: 520%;
   background: url(./image2/title-allow.png) no-repeat 50% 50%;
   animation: view 0.8s ease-in-out infinite alternate;
 }
@@ -499,14 +566,15 @@ ol {
   height: 2rem;
   background-color: tomato;
   left: -26.2%;
-  top: -125%;
+  top: -170%;
   background: url(./image2/title-allow.png) no-repeat 50% 50%;
   animation: view 0.8s ease-in-out infinite alternate;
 }
 
 .bx5 .ul-text p {
-  margin: 10px 0;
+  margin: 25px 0;
 }
+
 /*  */
 .box-mar li {
   margin-bottom: 1rem;
@@ -522,7 +590,8 @@ ol {
   position: relative;
   width: 50%;
   margin: 0 auto;
-  margin-bottom: 310px;
+  margin-top: 10rem;
+  margin-bottom: 40rem;
 }
 
 .view-btn h1 {
@@ -577,13 +646,12 @@ footer h2 {
   font-size: 50px;
   text-transform: uppercase;
 }
-footer p {
-  font-size: 30px;
-}
+
 .ft-w {
   width: 33.3333%;
   display: flex;
   justify-content: center;
+  /* position: relative; */
 }
 
 footer .git {
@@ -594,7 +662,7 @@ footer img {
 }
 footer .git img {
   height: 5rem;
-  left: 3%;
+  left: 2%;
   top: -11%;
 }
 footer .gmail {
@@ -604,4 +672,48 @@ footer .gmail img {
   height: 5rem;
   left: 6%;
   top: -11%;
+}
+footer p {
+  font-size: 30px;
+}
+/*  */
+
+.bx2 h4 {
+  top: -15%;
+  right: -25%;
+  text-indent: -9999px;
+  border: 1px solid #ffa339;
+  border-radius: 50%;
+  width: 70rem;
+  height: 70rem;
+}
+
+.bx4 h4 {
+  top: -20%;
+  left: 2%;
+  text-indent: -9999px;
+  border: 1px solid #ffa339;
+  border-radius: 50%;
+  width: 108rem;
+  height: 108rem;
+}
+
+.bx6 h4 {
+  top: -50%;
+  left: 2%;
+  text-indent: -9999px;
+  border-left: 1px solid #ffa339;
+  border-radius: 50%;
+  width: 70rem;
+  height: 70rem;
+}
+.bx-cir {
+  position: relative;
+  overflow: hidden;
+}
+.bx-cir h4 {
+  position: absolute;
+}
+.box .mar-bottom {
+  margin-bottom: 1.58rem;
 }

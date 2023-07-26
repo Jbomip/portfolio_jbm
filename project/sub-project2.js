@@ -8,3 +8,25 @@ $(window).on("scroll", () => {
   console.log(scrollY);
   console.log(headerhide);
 });
+
+//
+$("#pro").on("click", (evt) => {
+  evt.preventDefault();
+
+  const project = $(".bx1").offset().top;
+
+  scrollTo({
+    top: project,
+    behavior: "smooth",
+  });
+});
+$("#con").on("click", (evt) => {
+  evt.preventDefault();
+
+  const project = $("footer").offset().top;
+
+  scrollTo({
+    top: project,
+    behavior: "smooth",
+  });
+});

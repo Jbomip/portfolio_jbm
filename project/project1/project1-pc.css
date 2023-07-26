@@ -3,6 +3,7 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: "Pretendard", sans-serif;
 }
 
 header {
@@ -67,6 +68,12 @@ header .ul2 li {
 header .ul2 li a {
   height: 50px;
   line-height: 50px;
+  font-size: 1rem;
+  font-weight: 400;
+}
+header .ul2 li a:hover {
+  background-color: rgb(255, 163, 57);
+  color: #ffffff;
 }
 header .ul1:hover .ul2 {
   display: block;
@@ -143,6 +150,7 @@ header .ul1:hover .ul2 {
 }
 .middle section .box .bold {
   font-size: 3rem;
+  font-weight: 500;
   margin: 80px 0 0 40px;
 }
 .middle section .box p {
@@ -156,7 +164,8 @@ header .ul1:hover .ul2 {
 .middle section .box .sant2 {
   font-size: 1.1rem;
   margin-top: 20px;
-  line-height: 35px;
+  font-weight: 300;
+  /* line-height: 35px; */
 }
 
 .middle section .box .btn {
@@ -175,6 +184,10 @@ header .ul1:hover .ul2 {
   bottom: 50px;
   right: 60px;
 }
+.middle section .box .btn a:hover {
+  color: rgb(255, 163, 57);
+  background-color: #fff;
+}
 
 .middle section:nth-of-type(1) .box {
   left: 0;
@@ -190,16 +203,17 @@ header .ul1:hover .ul2 {
   left: 0;
 }
 .background1 {
-  padding: 70px 0;
+  padding: 8rem 0;
   background-color: rgb(248, 236, 222);
 }
 .title-h2 {
   text-align: center;
-  font-size: 2.3rem;
+  font-size: 3rem;
   font-weight: bold;
   margin-bottom: 60px;
   margin-top: 20px;
 }
+
 aside {
   height: 600px;
   /* width: 1400px; */
@@ -217,7 +231,7 @@ aside .txt {
   overflow: hidden;
 }
 aside .txt section {
-  border: 1px solid #222;
+  border: 2px solid #cfcfcf;
   background-color: rgb(255, 255, 255);
   width: 100%;
   height: 280px;
@@ -228,11 +242,13 @@ aside .txt section {
 aside .txt section h3 {
   font-size: 1.8rem;
   margin: 30px 0 0 20px;
+  font-weight: 600;
 }
 aside .txt section h2 {
   margin-top: 25px;
   margin-left: 20px;
   width: 90%;
+  font-weight: 300;
   font-size: 1.2rem;
 }
 
@@ -247,6 +263,11 @@ aside .txt a {
   position: absolute;
   right: 35px;
   bottom: 20px;
+}
+aside .txt a:hover {
+  background-color: rgb(255, 163, 57);
+  color: #ffffff;
+  border-color: rgb(255, 163, 57);
 }
 aside .txt:nth-of-type(1) {
   background-color: rgb(148, 218, 217);
@@ -271,6 +292,7 @@ aside .txt .txt-img2 {
 }
 .btn-plus {
   margin: 125px 0 100px 0;
+  font-weight: 600;
 }
 .btn-plus a {
   width: 20rem;
@@ -282,6 +304,11 @@ aside .txt .txt-img2 {
   justify-content: center;
   align-items: center;
   font-size: 1.5rem;
+}
+.btn-plus a:hover {
+  background-color: rgb(255, 163, 57);
+  border-color: rgb(255, 163, 57);
+  color: #ffffff;
 }
 
 .plus-container {
@@ -311,16 +338,25 @@ aside .txt .txt-img2 {
   right: 20px;
   top: 45px;
 }
+.plus-container .btn-1 a:hover {
+  background-color: #ffffff;
+  color: rgb(255, 163, 57);
+  font-weight: 600;
+}
 .orange {
-  background-color: orange;
+  background-color: rgb(255, 163, 57);
 }
 .grey {
   background-color: gray;
+}
+.grey .btn-1 a:hover {
+  color: #000000;
 }
 
 .plus-container h2 {
   font-size: 2rem;
   margin: 30px 0 0 45px;
+  font-weight: 500;
 }
 .plus-container p:nth-of-type(1) {
   margin: 10px 0 0 45px;
@@ -329,6 +365,7 @@ aside .txt .txt-img2 {
   position: absolute;
   right: 20px;
   margin-top: 15px;
+  font-weight: 300;
 }
 .plus-container p:nth-of-type(1) {
   display: none;

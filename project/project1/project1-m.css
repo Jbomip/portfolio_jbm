@@ -3,12 +3,14 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: "Pretendard", sans-serif;
 }
 header {
   background-color: #ffffff;
   height: 7vh;
   display: flex;
   position: relative;
+  padding-top: 8px;
 }
 header .header_sns {
   display: none;
@@ -16,7 +18,7 @@ header .header_sns {
 header .material-symbols-outlined {
   position: absolute;
   right: 30px;
-  top: 15px;
+  top: 23px;
 }
 header .ul1 {
   background-color: #fff;
