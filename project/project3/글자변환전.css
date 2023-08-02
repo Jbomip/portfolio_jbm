@@ -1,0 +1,249 @@
+html {
+  font-size: 0.521vw;
+}
+body {
+  text-transform: uppercase;
+  font-family: "Pretendard", sans-serif;
+}
+/* header */
+.h-posi {
+  position: absolute;
+}
+header {
+  color: #ffffff;
+  z-index: 99999;
+  position: fixed;
+  width: 100%;
+  height: 6.5rem;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.header .f-wh {
+  width: 15%;
+  height: 6.5rem;
+  display: flex;
+  align-items: center;
+}
+.header a {
+  justify-content: right;
+}
+.header a img {
+  width: 40%;
+}
+.header p {
+  justify-content: left;
+}
+.header p img {
+  width: 10%;
+}
+/* header toggle */
+header .toggle {
+  display: none;
+  position: absolute;
+}
+
+/* title */
+.title {
+  position: relative;
+  background-color: #000000;
+  height: 963px;
+  overflow: hidden;
+}
+.t-posi {
+  position: absolute;
+}
+.title h3 {
+  text-indent: -9999px;
+  z-index: 9;
+  background-color: rgb(0, 0, 0, 0.65);
+  width: 100%;
+  height: 100%;
+}
+.youtube-coke {
+  width: 100%;
+  height: 100%;
+  /* aspect-ratio: 16/ 9; */
+}
+.t-txt {
+  z-index: 99;
+  color: #ffffff;
+  top: 320px;
+  left: 270px;
+}
+.t-txt h1 {
+  font-size: 6rem;
+  font-weight: 700;
+  padding-bottom: 1.6rem;
+  letter-spacing: 3px;
+}
+.t-txt h2 {
+  font-size: 40px;
+  font-weight: 400;
+}
+
+/* main */
+main {
+  background-color: #fe001a;
+  overflow: hidden;
+}
+
+/* middle */
+.middle {
+  padding: 15.5rem 0;
+}
+.middle .bx1 {
+  height: 54rem;
+}
+.middle .bx2 {
+  height: 79rem;
+  background: url(./images/middlewhitebx.svg) no-repeat;
+  color: #ffffff;
+}
+.middle .bx3 {
+  height: 54rem;
+}
+/* 텍스트 조절 */
+.middle .txt-bx h1 {
+  font-size: 35px;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+.middle .txt-bx h2 {
+  font-size: 28px;
+  font-weight: 500;
+  padding-bottom: 25px;
+}
+/* 사진이랑 말칸 위치조절 */
+article h3 {
+  position: absolute;
+  width: 73.5rem;
+  height: 46rem;
+  background-color: turquoise;
+  text-indent: -9999px;
+}
+.bx1 h3 {
+  /* top: 0;
+  right: 0; */
+  transform: rotate(2.63deg);
+  background: url(./images/middle1.png) no-repeat;
+}
+.bx1 .txt-bx {
+  transform: rotate(-1.32deg);
+  top: 10%;
+}
+.middle .bx1 article {
+  justify-content: center;
+}
+.bx2 h3 {
+  transform: rotate(-2.63deg);
+  background: url(./images/middle2.png) no-repeat;
+}
+.bx2 .txt-bx {
+  transform: rotate(1.32deg);
+}
+.middle .bx2 article {
+  justify-content: center;
+  align-items: center;
+}
+.bx3 h3 {
+  bottom: 0;
+  transform: rotate(2.63deg);
+  background: url(./images/middle3.png) no-repeat;
+}
+.bx3 .txt-bx {
+  transform: rotate(-1.32deg);
+  top: 23%;
+}
+.middle .bx3 article {
+  justify-content: center;
+}
+.m-bx {
+  display: flex;
+  color: #fe001a;
+}
+.txt-bx {
+  position: relative;
+  width: 38.313rem;
+  height: 38.313rem;
+}
+.txt-bx .cap {
+  position: absolute;
+}
+/* 텍스트 정렬 */
+.txt-bx .txt {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* 화살표 각자 정렬 */
+.txt-bx p {
+  text-align: right;
+}
+.bx2 .txt-bx p {
+  text-align: left;
+}
+
+/* flex 50% 50% 해줄려고 */
+.middle article {
+  width: 50%;
+  position: relative;
+  display: flex;
+}
+/* stories */
+.stories1 {
+  position: relative;
+  height: 90rem;
+  margin-top: 8rem;
+  /* background: turquoise; */
+}
+.stories1 img {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.s-txt {
+  position: absolute;
+  top: 38.5%;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.stories1 h1 {
+  font-size: 50px;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+.stories1 h2 {
+  font-size: 30px;
+  font-weight: 700;
+}
+/* slogan */
+
+.s-wrapper {
+  font-family: "ITC Souvenir Std";
+  font-weight: 800;
+  font-size: 135px;
+  height: 16rem;
+  background-color: turquoise;
+}
+.s-flex {
+}
+.top {
+}
+.top h1 {
+}
+
+/* 
+900 
+800
+700 bold 
+600
+500 medium
+400 regular
+300
+200
+100
+*/

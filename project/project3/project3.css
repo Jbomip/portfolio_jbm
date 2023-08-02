@@ -1,0 +1,295 @@
+html {
+  font-size: 0.521vw;
+}
+body {
+  text-transform: uppercase;
+  font-family: "Pretendard", sans-serif;
+}
+/* header */
+.h-posi {
+  position: absolute;
+}
+header {
+  color: #ffffff;
+  z-index: 99999;
+  position: fixed;
+  width: 100%;
+  height: 10.5rem;
+  /* background-color: turquoise; */
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.header .f-wh {
+  width: 20%;
+  /* background-color: #fe001a; */
+  height: 10.5rem;
+  display: flex;
+  align-items: center;
+}
+.header a {
+  justify-content: right;
+}
+.header a img {
+  width: 50%;
+}
+.header p {
+  justify-content: left;
+}
+.header p img {
+  width: 10%;
+}
+/* header toggle */
+header .toggle {
+  display: none;
+  position: absolute;
+}
+
+/* title */
+.title {
+  position: relative;
+  background-color: #000000;
+  height: 963px;
+  height: 96.3rem;
+  overflow: hidden;
+}
+.t-posi {
+  position: absolute;
+}
+.title h3 {
+  text-indent: -9999px;
+  z-index: 9;
+  background-color: rgb(0, 0, 0, 0.65);
+  width: 100%;
+  height: 100%;
+}
+.youtube-coke {
+  width: 100%;
+  height: 100%;
+  /* aspect-ratio: 16/ 9; */
+}
+.t-txt {
+  /* background-color: #fe001a; */
+  z-index: 99;
+  color: #ffffff;
+  top: 25%;
+  left: 50%;
+  width: 65%;
+  transform: translate(-50%, 50%);
+}
+.t-txt h1 {
+  font-size: 6rem;
+  font-weight: 700;
+  padding-bottom: 1.6rem;
+  letter-spacing: 3px;
+}
+.t-txt h2 {
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+/* main */
+main {
+  background-color: #fe001a;
+  overflow: hidden;
+}
+
+/* middle */
+.middle {
+  padding: 15.5rem 0;
+}
+.middle .bx1 {
+  height: 864px;
+  height: 86.4rem;
+  margin: 100px 0;
+}
+.middle .bx2 {
+  height: 1264px;
+  height: 126.4rem;
+  background: url(./images/middlewhitebx.svg) no-repeat;
+  color: #ffffff;
+}
+.middle .bx3 {
+  height: 864px;
+  height: 86.4rem;
+  margin-top: 100px;
+}
+/* 텍스트 조절 */
+.middle .txt-bx h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+.middle .txt-bx h2 {
+  font-size: 2.8rem;
+  font-weight: 500;
+  padding-bottom: 2.5rem;
+}
+/* 사진이랑 말칸 위치조절 */
+.m-bx article {
+  justify-content: center;
+  align-items: center;
+}
+article h3 {
+  position: absolute;
+  /* width: 1176px;
+  height: 736px; */
+  width: 117.6rem;
+  height: 73.6rem;
+  background-color: turquoise;
+  text-indent: -9999px;
+}
+.bx1 h3 {
+  /* top: 0;
+  right: 0; */
+  transform: rotate(2.63deg);
+  background: url(./images/middle1.png) no-repeat 50% 50% / cover;
+}
+.bx1 .txt-bx {
+  transform: rotate(-1.32deg);
+  /* top: 10%; */
+}
+.middle .bx1 article {
+  justify-content: center;
+}
+.bx2 h3 {
+  transform: rotate(-2.63deg);
+  background: url(./images/middle2.png) no-repeat 50% 50% / cover;
+}
+.bx2 .txt-bx {
+  transform: rotate(1.32deg);
+}
+.middle .bx2 article {
+  justify-content: center;
+  align-items: center;
+}
+.middle .bx3 article {
+  justify-content: center;
+  align-items: center;
+}
+.bx3 h3 {
+  /* bottom: 0;  */
+  transform: rotate(2.63deg);
+  background: url(./images/middle3.png) no-repeat 50% 50% / cover;
+}
+.bx3 .txt-bx {
+  transform: rotate(-1.32deg);
+  /* top: 23%; */
+}
+
+.middle .bx3 article {
+  justify-content: center;
+}
+.m-bx {
+  display: flex;
+  color: #fe001a;
+}
+.txt-bx {
+  position: relative;
+  width: 63.854%;
+  height: 71%;
+  /* height: 613px; */
+  /* background-color: aqua; */
+}
+.txt-bx .cap {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+/* 텍스트 정렬 */
+.txt-bx .txt {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* 화살표 각자 정렬 */
+.txt-bx p {
+  text-align: right;
+}
+.txt-bx p img {
+  width: 4.9rem;
+}
+.bx2 .txt-bx p {
+  text-align: left;
+}
+
+/* flex 50% 50% 해줄려고 */
+.middle article {
+  width: 50%;
+  position: relative;
+  display: flex;
+}
+/* stories */
+.stories1 {
+  position: relative;
+  height: 144rem;
+  margin-top: 128px;
+  /* background: turquoise; */
+}
+.stories1 img {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.s-txt {
+  position: absolute;
+  width: 100%;
+  top: 38%;
+  margin: 0 auto;
+  text-align: center;
+}
+.stories1 h1 {
+  font-size: 5rem;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+.stories1 h2 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+/* slogan */
+
+.s-wrapper {
+  font-family: "ITC Souvenir Std";
+  font-weight: 800;
+  font-size: 13.5rem;
+  height: 256px;
+  background-color: turquoise;
+}
+.s-flex {
+  height: 50%;
+  display: flex;
+  background-color: tomato;
+}
+.s-wrapper {
+  height: 50.6rem;
+}
+.s-wrapper span {
+  margin: 0 30px;
+}
+.top {
+  background-color: blueviolet;
+  align-items: baseline;
+  background-color: #fe001a;
+}
+.bottom {
+  background-color: springgreen;
+}
+.top h1 {
+  /* background-color: aqua; */
+}
+
+/* 
+900 
+800
+700 bold 
+600
+500 medium
+400 regular
+300
+200
+100
+*/

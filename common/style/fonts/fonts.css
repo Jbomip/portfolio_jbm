@@ -4,7 +4,17 @@ https://github.com/orioncactus/pretendard
 */
 
 /* font-family: "Pretendard";  */
-
+/* 
+900 
+800
+700 bold
+600
+500 medium
+400 regular
+300
+200
+100
+*/
 @font-face {
   font-family: "Pretendard";
   font-weight: 900;
@@ -92,4 +102,12 @@ https://github.com/orioncactus/pretendard
     format("woff2");
   font-weight: 700;
   font-style: normal;
+}
+@font-face {
+  font-family: "ITC Souvenir Std";
+  font-weight: 800;
+  font-display: swap;
+  src: local("ITC Souvenir Std Bold"),
+    url("./woff2/ITC-Souvenir-Std-Bold-Italic.woff2") format("woff2"),
+    url("./woff/ITC-Souvenir-Std-Bold-Italic.woff") format("woff");
 }
