@@ -1,0 +1,104 @@
+header .toggle {
+  top: -100rem;
+  /* top: 0; */
+  position: absolute;
+  background-color: #ffffff;
+  width: 100vw;
+  height: 100vh;
+  /* display: none; */
+  transition: 1s;
+}
+.t-to {
+  margin-top: 100rem;
+}
+.t-btn-c {
+  transition: 0.5s;
+  fill: #fe001a;
+}
+
+.toggle .h-bottom-line {
+  position: absolute;
+  bottom: 0;
+  height: 4rem;
+  width: 100vw;
+}
+.toggle .h-top-line {
+  position: absolute;
+  height: 4rem;
+  top: 0;
+  width: 100vw;
+  transform: rotate(180deg);
+}
+.toggle .h-t-img img {
+  width: 100%;
+}
+.toggle ul {
+  height: 100%;
+  width: 33%;
+}
+.toggle ul li:nth-of-type(1) {
+  padding-top: 22rem;
+}
+.toggle ul li {
+  margin-bottom: 0.5rem;
+}
+.toggle ul a {
+  color: #fe001a;
+  font-size: 6rem;
+  font-weight: 700;
+}
+.h-logo2 {
+  text-indent: -9999px;
+  width: 26.2rem;
+  height: 6.5rem;
+  margin: 15rem 15rem 0 20rem;
+  background: url(./images/cokekorealogored.svg) no-repeat 50% 50% /100%;
+}
+.h-logo2 a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.sns-logo {
+  position: absolute;
+  bottom: 6rem;
+  right: 18rem;
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  gap: 3.5rem;
+}
+.sns-logo p a {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 700;
+  border: #fe001a 2px solid;
+  width: 7.5rem;
+  height: 7.5rem;
+  border-radius: 50%;
+  color: #fe001a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+.sns-logo p a:hover {
+  transform: scale(0.8);
+}
+.to-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.toggle ul a {
+  transition: 0.5s;
+}
+.toggle ul a:hover {
+  margin-left: 3rem;
+}
+.toggle .sns-logo img {
+  transition: 0.5s;
+}
+.toggle .sns-logo img:hover {
+  transform: scale(0.8);
+}

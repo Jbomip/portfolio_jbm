@@ -2,7 +2,7 @@ html {
   font-size: 0.521vw;
 }
 body {
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-family: "Pretendard", sans-serif;
 }
 /* header */
@@ -15,43 +15,47 @@ header {
   position: fixed;
   width: 100%;
   height: 10.5rem;
-  /* background-color: turquoise; */
+  /* background-color: #fe0; */
 }
 .header {
   display: flex;
   justify-content: space-between;
 }
+.header p {
+  position: relative;
+  z-index: 99;
+}
+.header p svg {
+  transition: 0.8s;
+}
 .header .f-wh {
-  width: 20%;
+  width: 10%;
   /* background-color: #fe001a; */
-  height: 10.5rem;
+  height: 11.5rem;
   display: flex;
   align-items: center;
 }
 .header a {
+  margin-left: 20rem;
   justify-content: right;
 }
 .header a img {
-  width: 50%;
+  width: 18rem;
 }
-.header p {
-  justify-content: left;
-}
+
 .header p img {
-  width: 10%;
+  width: 4rem;
+}
+#t-btn svg {
+  cursor: pointer;
 }
 /* header toggle */
-header .toggle {
-  display: none;
-  position: absolute;
-}
 
 /* title */
 .title {
   position: relative;
   background-color: #000000;
-  height: 963px;
-  height: 96.3rem;
+  height: 118vh;
   overflow: hidden;
 }
 .t-posi {
@@ -67,13 +71,12 @@ header .toggle {
 .youtube-coke {
   width: 100%;
   height: 100%;
-  /* aspect-ratio: 16/ 9; */
+  aspect-ratio: 16/ 9;
 }
 .t-txt {
-  /* background-color: #fe001a; */
   z-index: 99;
   color: #ffffff;
-  top: 25%;
+  top: 20%;
   left: 50%;
   width: 65%;
   transform: translate(-50%, 50%);
@@ -82,7 +85,7 @@ header .toggle {
   font-size: 6rem;
   font-weight: 700;
   padding-bottom: 1.6rem;
-  letter-spacing: 3px;
+  letter-spacing: 0.3rem;
 }
 .t-txt h2 {
   font-size: 4rem;
@@ -102,10 +105,9 @@ main {
 .middle .bx1 {
   height: 864px;
   height: 86.4rem;
-  margin: 100px 0;
+  margin: 10rem 0;
 }
 .middle .bx2 {
-  height: 1264px;
   height: 126.4rem;
   background: url(./images/middlewhitebx.svg) no-repeat;
   color: #ffffff;
@@ -113,13 +115,13 @@ main {
 .middle .bx3 {
   height: 864px;
   height: 86.4rem;
-  margin-top: 100px;
+  margin-top: 10rem;
 }
 /* 텍스트 조절 */
 .middle .txt-bx h1 {
   font-size: 3.5rem;
   font-weight: 700;
-  padding-bottom: 20px;
+  padding-bottom: 2rem;
 }
 .middle .txt-bx h2 {
   font-size: 2.8rem;
@@ -159,6 +161,18 @@ article h3 {
 }
 .bx2 .txt-bx {
   transform: rotate(1.32deg);
+}
+/* txt 위치 */
+.bx1 .txt {
+  margin-top: 3%;
+  width: 52%;
+}
+.bx2 .txt {
+  width: 58%;
+  margin-left: 4%;
+}
+.bx3 .txt {
+  margin-top: 3%;
 }
 .middle .bx2 article {
   justify-content: center;
@@ -225,7 +239,7 @@ article h3 {
 .stories1 {
   position: relative;
   height: 144rem;
-  margin-top: 128px;
+  margin-top: 12.8rem;
   /* background: turquoise; */
 }
 .stories1 img {
@@ -243,7 +257,7 @@ article h3 {
 .stories1 h1 {
   font-size: 5rem;
   font-weight: 700;
-  padding-bottom: 10px;
+  padding-bottom: 1rem;
 }
 .stories1 h2 {
   font-size: 3rem;
@@ -256,7 +270,7 @@ article h3 {
   font-family: "ITC Souvenir Std";
   font-weight: 800;
   font-size: 13.5rem;
-  height: 256px;
+  height: 25.6rem;
   background-color: turquoise;
 }
 .s-flex {
@@ -265,23 +279,161 @@ article h3 {
   background-color: tomato;
 }
 .s-wrapper {
-  height: 50.6rem;
+  height: 42rem;
 }
 .s-wrapper span {
-  margin: 0 30px;
+  margin: 0 3rem;
 }
 .top {
-  background-color: blueviolet;
-  align-items: baseline;
+  align-items: end;
+  color: #ffffff;
   background-color: #fe001a;
 }
 .bottom {
-  background-color: springgreen;
+  color: #fe001a;
+  background-color: #ffffff;
 }
-.top h1 {
+.stories2 {
+  background: url(./images/stories2.png) no-repeat 50% 50% / 100%;
+  height: 111.2rem;
+  position: relative;
+}
+.stories2 h1 {
+  font-size: 5rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+.stories2 h2 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.s2-txt {
+  color: #ffffff;
+  top: 23rem;
+  left: 20rem;
+  position: absolute;
+  width: 75rem;
+}
+/*  */
+footer {
+  height: 49.5rem;
+  background-color: #ffffff;
+  color: #fe001a;
+  font-size: 1.8rem;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.f-logo a {
+  background: url(./images/cokekorealogored.svg) no-repeat 50% 50% / 100%;
   /* background-color: aqua; */
+  display: block;
+  width: 26.2rem;
+  height: 5.6rem;
+  text-indent: -9999px;
+}
+footer nav {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.6;
 }
 
+footer nav a {
+  padding-left: 1.5rem;
+  position: relative;
+  z-index: 1;
+}
+/* footer nav a:hover {
+  background-color: yellow;
+  transform: skewX();
+} */
+footer nav a::before {
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+footer nav a:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+footer nav a::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  inset: 0 0 0 0;
+  background: rgb(255, 255, 0, 0.65);
+  z-index: -1;
+  transition: transform 0.3s ease;
+}
+footer .rule {
+  display: flex;
+  gap: 2rem;
+}
+footer .rule a {
+  height: 3rem;
+  margin-top: 0.78rem;
+}
+footer .rule p {
+  line-height: 3rem;
+}
+
+footer .f-hei {
+  width: 150rem;
+  height: 17rem;
+}
+footer .f-hei:nth-of-type(1) {
+  display: flex;
+  justify-content: space-evenly;
+}
+footer .f-hei:nth-of-type(2) {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  width: 130rem;
+}
+footer .f-hei:nth-of-type(2) p {
+  padding-bottom: 1rem;
+  padding-bottom: 1.5rem;
+}
+.f-sns-logo a:nth-of-type(1) img {
+  width: 5rem;
+}
+.f-sns-logo a:nth-of-type(2) img {
+  width: 5rem;
+}
+.f-sns-logo a:nth-of-type(3) img {
+  width: 4.5rem;
+}
+.f-sns-logo a:nth-of-type(4) img {
+  width: 2.5rem;
+}
+.f-sns-logo a:nth-of-type(5) {
+  display: block;
+  font-weight: 700;
+  box-sizing: border-box;
+  width: 28.8rem;
+  height: 7.2rem;
+  border: 1px solid #fe001a;
+  border-radius: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.f-sns-logo {
+  display: flex;
+  flex-wrap: wrap;
+  width: 28.8rem;
+  justify-content: space-around;
+  align-items: center;
+  height: 15rem;
+  padding-right: 1rem;
+}
 /* 
 900 
 800

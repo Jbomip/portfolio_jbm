@@ -9,30 +9,53 @@
     <link rel="stylesheet" href="../../common/style/reset.css">
     <link rel="stylesheet" href="../../common/style/fonts/fonts.css">
     <link rel="stylesheet" href="./project3.css">
+    <link rel="stylesheet" href="./header.css">
+    <script src="../../common/style/jquery-3.7.0.min.js"></script>
+    <script defer src="./project3.js"></script>
 </head>
 
 <body>
     <header>
         <div class="header">
             <a href="#" class="h-logo f-wh"><img src="./images/cokekorealogo.svg" alt="한국 코카콜라 로고"></a>
-            <p class="f-wh"><img src="./images/menubar.svg" alt=""></p>
+            <p id="t-btn" class="f-wh"><svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960"
+                    width="48" fill="#fff">
+                    <path d="M95-203v-95h771v95H95Zm0-230v-94h771v94H95Zm0-229v-95h771v95H95Z" />
+                </svg></p>
+            <!-- <p id="t-btn" class="f-wh"><img src="./images/menubar.svg" alt="#"></p> -->
         </div>
         <div class="toggle">
-            <a href="#" class="n-logo">로고</a>
-            <ul>
-                <li><a href="#">our company</a></li>
-                <li><a href="#">brands</a></li>
-                <li><a href="#">sustainable business</a></li>
-                <li><a href="#">stories</a></li>
-                <li><a href="#">creations</a></li>
-                <li><a href="#">now</a></li>
-            </ul>
-            <div class="sns-logo">
-                <a href="#"></a>
-                <a href="#"></a>
-                <a href="#"></a>
-                <a href="#"></a>
-                <a href="#"></a>
+            <div class="to-wrapper">
+                <div class="h-bottom-line h-t-img">
+                    <img src="./images/headerlinebottom.svg" alt="#">
+                </div>
+                <div class="h-top-line h-t-img">
+                    <img src="./images/headerlinebottom.svg" alt="#">
+                </div>
+                <div class="h-logo2">
+                    <a href="#">로고</a>
+                </div>
+                <ul>
+                    <li><a href="#">our company</a></li>
+                    <li><a href="#">brands</a></li>
+                    <li><a href="#">sustainable business</a></li>
+                    <li><a href="#">stories</a></li>
+                    <li><a href="#">creations</a></li>
+                    <li><a href="#">now</a></li>
+                </ul>
+                <div class="sns-logo">
+                    <a href="https://www.youtube.com/user/openhappinesskorea" target="_blank"><img
+                            src="./images/youtube.svg" alt=""></a>
+                    <a href="https://twitter.com/CocaCola_Korea" target="_blank"><img src="./images/twitter.svg"
+                            alt=""></a>
+                    <a href="https://www.instagram.com/cocacola_korea/" target="_blank"><img src="./images/instar.svg"
+                            alt=""></a>
+                    <a href="#"><img src="./images/facebook.svg"
+                            alt="https://www.facebook.com/cocacolasouthkorea?brand_redir=40796308305"
+                            target="_blank"></a>
+                    <p><a href="https://cokeplay.cocacola.co.kr/main?utm_source=etc&utm_medium=etc&utm_campaign=CokePLAY%20%EC%9B%B9%EB%B0%94%EB%A1%9C%EA%B0%80%EA%B8%B0_211020_%EC%BD%94-%ED%81%AC%20%EC%A0%B8%EB%8B%88"
+                            target="_blank">Coke <br> PLAY</a></p>
+                </div>
             </div>
         </div>
     </header>
@@ -43,9 +66,13 @@
         </div>
         <h3 class="t-posi">배경누르기</h3>
         <!-- https://www.youtube.com/embed/vloMDezTHWc?autoplay=1&mute=1&controls=0&loop=1&playlist=vloMDezTHWc -->
-        <iframe src="https://www.youtube.com/embed/vloMDezTHWc?" title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen class="youtube-coke t-posi"></iframe>
+        <div class="youtube-w">
+            <iframe
+                src="https://www.youtube.com/embed/vloMDezTHWc?autoplay=1&mute=1&controls=0&loop=1&playlist=vloMDezTHWc"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen class="youtube-coke t-posi"></iframe>
+        </div>
     </section>
     <main>
         <div class="middle">
@@ -125,45 +152,62 @@
         </div>
 
         <section class="stories2">
-            <h1>코카-콜라와 함께 떠나는 짜릿한 여행</h1>
-            <h2>코카-콜라 노래의 기원부터 오피스 탐방,<br>비하인드 스토리까지 한국 코카-콜라에서만 <br> 만날 수 있는 특별한 이야기</h2>
+            <div class="s2-txt">
+                <h1>코카-콜라와 함께 떠나는 짜릿한 여행</h1>
+                <h2>코카-콜라 노래의 기원부터 오피스 탐방,<br>비하인드 스토리까지 한국 코카-콜라에서만 <br> 만날 수 있는 특별한 이야기</h2>
+            </div>
         </section>
         <footer>
             <div class="f-hei">
-                <div class="f-logo">
+                <div class="f-logo .f-wid">
                     <a href="#">로고</a>
                 </div>
-                <div class="nav">
+                <nav class=".f-wid">
                     <a href="#">our company</a>
                     <a href="#">brands</a>
+                    <br>
                     <!-- <br> -->
                     <a href="#">creations</a>
                     <a href="#">stories</a>
                     <!-- <br> -->
+                    <br>
                     <a href="#">now</a>
                     <a href="#">sustainable business</a>
-                </div>
-                <div class="rule">
-                    <p>고객안내</p>
-                    <p>사이트 운영정책</p>
-                    <p>히스토리</p>
-                    <p>글로벌 코카콜라</p>
+                </nav>
+                <div class="rule .f-wid">
+                    <a href="#">
+                        <p>고객안내</p>
+                    </a>
+                    <a href="#">
+                        <p>사이트 운영정책</p>
+                    </a>
+                    <a href="#">
+                        <p>히스토리</p>
+                    </a>
+                    <a href="#">
+                        <p>글로벌 코카콜라</p>
+                    </a>
                 </div>
             </div>
             <div class="f-hei">
                 <p>2022 the coca-cola company. all rights reserved.</p>
                 <div class="f-sns-logo">
                     <!-- svg -->
-                    <a href="#">유튜브</a>
-                    <a href="#">트위터</a>
-                    <a href="#">인스타</a>
-                    <a href="#">페이스북</a>
-                    <a href="#">coke PLAY</a>
+                    <a href="https://www.youtube.com/user/openhappinesskorea" target="_blank"><img
+                            src="./images/youtube.svg" alt="유튜브 로고"></a>
+                    <a href="https://twitter.com/CocaCola_Korea" target="_blank"><img src="./images/twitter.svg"
+                            alt="트위터 로고"></a>
+                    <a href="https://www.instagram.com/cocacola_korea/" target="_blank"><img src="./images/instar.svg"
+                            alt="인스타 로고"></a>
+                    <a href="https://www.facebook.com/cocacolasouthkorea?brand_redir=40796308305" target="_blank"><img
+                            src="./images/facebook.svg" alt="페이스북 로고"></a>
+                    <a href="https://cokeplay.cocacola.co.kr/main?utm_source=etc&utm_medium=etc&utm_campaign=CokePLAY%20%EC%9B%B9%EB%B0%94%EB%A1%9C%EA%B0%80%EA%B8%B0_211020_%EC%BD%94-%ED%81%AC%20%EC%A0%B8%EB%8B%88"
+                        target="_blank">coke
+                        <br> PLAY</a>
                 </div>
             </div>
         </footer>
         </div>
-
     </main>
 </body>
 
