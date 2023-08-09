@@ -1,6 +1,9 @@
 html {
   font-size: 0.521vw;
 }
+html::-webkit-scrollbar {
+  display: none;
+}
 body {
   text-transform: capitalize;
   font-family: "Pretendard", sans-serif;
@@ -15,7 +18,6 @@ header {
   position: fixed;
   width: 100%;
   height: 10.5rem;
-  /* background-color: #fe0; */
 }
 .header {
   display: flex;
@@ -30,11 +32,11 @@ header {
 }
 .header .f-wh {
   width: 10%;
-  /* background-color: #fe001a; */
-  height: 11.5rem;
+  height: 15.5rem;
   display: flex;
   align-items: center;
 }
+
 .header a {
   margin-left: 20rem;
   justify-content: right;
@@ -228,6 +230,14 @@ article h3 {
 .bx2 .txt-bx p {
   text-align: left;
 }
+article p img:hover {
+  animation: arrow 0.8s ease-in-out infinite alternate;
+}
+@keyframes arrow {
+  100% {
+    transform: translateX(11px);
+  }
+}
 
 /* flex 50% 50% 해줄려고 */
 .middle article {
@@ -288,6 +298,16 @@ article h3 {
   align-items: end;
   color: #ffffff;
   background-color: #fe001a;
+}
+.top span {
+  animation: top 3s infinite alternate linear;
+}
+@keyframes top {
+  100% {
+    transform: translate(10);
+  }
+}
+@keyframes bottom {
 }
 .bottom {
   color: #fe001a;
@@ -445,3 +465,4 @@ footer .f-hei:nth-of-type(2) p {
 200
 100
 */
+/* mix-blend-mode: difference; */

@@ -68,21 +68,56 @@ header .toggle {
   align-items: center;
   gap: 3.5rem;
 }
+/* .sns-logo a:nth-of-type(1) img {
+  width: 5.3rem;
+  height: 3.9rem;
+}
+.sns-logo a:nth-of-type(2) img {
+  width: 4.8rem;
+  height: 3.9rem;
+}
+.sns-logo a:nth-of-type(3) img {
+  width: 3.9rem;
+  height: 3.9rem;
+}
+.sns-logo a:nth-of-type(4) img {
+  width: 2.2rem;
+  height: 3.9rem;
+} */
+.sns-logo a:nth-of-type(1) img {
+  width: 6.3rem;
+  height: 4.9rem;
+}
+.sns-logo a:nth-of-type(2) img {
+  width: 5.8rem;
+  height: 4.9rem;
+}
+.sns-logo a:nth-of-type(3) img {
+  width: 4.9rem;
+  height: 4.9rem;
+}
+.sns-logo a:nth-of-type(4) img {
+  width: 3.2rem;
+  height: 4.9rem;
+}
+.sns-logo p {
+  border: #fe001a 0.2rem solid;
+  border-radius: 50%;
+  transition: 0.5s;
+  font-size: 1.8rem;
+}
 .sns-logo p a {
   display: block;
   font-size: 1.8rem;
   font-weight: 700;
-  border: #fe001a 2px solid;
   width: 7.5rem;
   height: 7.5rem;
-  border-radius: 50%;
   color: #fe001a;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: 0.5s;
 }
-.sns-logo p a:hover {
+.sns-logo p:hover {
   transform: scale(0.8);
 }
 .to-wrapper {
@@ -101,4 +136,78 @@ header .toggle {
 }
 .toggle .sns-logo img:hover {
   transform: scale(0.8);
+}
+
+/* 8888888888888888888888888888888 */
+.sss {
+  /* background-color: aqua; */
+  width: 4.5rem;
+  height: 3rem;
+  position: relative;
+  cursor: pointer;
+  z-index: 999;
+}
+.sss div {
+  border-radius: 5rem;
+  height: 7rem;
+  width: 7rem;
+  position: absolute;
+  top: -1.45rem;
+  left: -1.5rem;
+  background-color: #fe001a;
+  opacity: 0;
+  transition: 0.6s;
+}
+.sss .one {
+  opacity: 1;
+}
+.sss span {
+  position: absolute;
+  display: block;
+  width: 4.5rem;
+  height: 0.5rem;
+  border-radius: 3rem;
+  background-color: #ffffff;
+  transition: 0.5s;
+}
+.sss span:nth-of-type(1) {
+  top: 0;
+}
+.sss span:nth-of-type(2) {
+  top: 50%;
+}
+.sss span:nth-of-type(3) {
+  top: 100%;
+  transition: 0.3s;
+}
+
+/* toggle시 일단 하버로 */
+.sss .sp-1 {
+  z-index: 99;
+  width: 5rem;
+  transform: rotate(44deg);
+  transform-origin: 0% 100%;
+}
+.sss .sp-2 {
+  z-index: 99;
+  margin-top: 2.1rem;
+  left: 0.2rem;
+  width: 5rem;
+  transform: rotate(-45deg);
+  transform-origin: 0% 50%;
+}
+.sss .sp-3 {
+  opacity: 0;
+}
+/* ------------------- */
+.toggle ul {
+  opacity: 0;
+  transition: 3.5s;
+}
+.toggle .sns-logo {
+  opacity: 0;
+  transition: 3.5s;
+}
+.toggle .to-opacitiy {
+  opacity: 1;
 }
