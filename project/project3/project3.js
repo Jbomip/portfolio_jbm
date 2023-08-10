@@ -3,13 +3,11 @@ $(".sss").on("click", () => {
   $(".toggle ul").toggleClass("to-opacitiy");
   $(".toggle .sns-logo").toggleClass("to-opacitiy");
 });
-$(".sss").on("click", () => {
-  $(".to-wrapper").toggleClass("to-w");
-});
+// $(".sss").on("click", () => {
+//   $(".to-wrapper").toggleClass("to-w");
+// });
 //
-$("#t-btn").on("click", () => {
-  $(".header p svg").toggleClass("t-btn-c");
-});
+
 // 오퍼시티넣기
 $(".sss").on("click", () => {
   $(".sss span:nth-of-type(1)").toggleClass("sp-1");
@@ -31,3 +29,20 @@ const movingImg = (evt) => {
 };
 
 $(".txt-bx").on("mousemove", movingImg);
+//
+let prevScroll = window.scrollY;
+console.log(prevScroll);
+$(window).on("scroll", () => {
+  let currentScroll = window.scrollY;
+  console.log("currentScroll: ", currentScroll);
+  console.log("1 prevScroll: ", prevScroll);
+
+  if (prevScroll > currentScroll) {
+    $(".header").css({ marginTop: 0 });
+  } else {
+    $(".header").css({ marginTop: -105 });
+  }
+
+  prevScroll = currentScroll;
+  console.log("2 prevScroll: ", prevScroll);
+});

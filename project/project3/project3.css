@@ -17,12 +17,15 @@ header {
   z-index: 99999;
   position: fixed;
   width: 100%;
-  height: 10.5rem;
+  /* background-color: aqua; */
+  height: 15.5rem;
 }
 .header {
+  transition: 0.5s;
   display: flex;
   justify-content: space-between;
 }
+
 .header p {
   position: relative;
   z-index: 99;
@@ -48,9 +51,7 @@ header {
 .header p img {
   width: 4rem;
 }
-#t-btn svg {
-  cursor: pointer;
-}
+
 /* header toggle */
 
 /* title */
@@ -280,39 +281,48 @@ article p img:hover {
   font-family: "ITC Souvenir Std";
   font-weight: 800;
   font-size: 13.5rem;
-  height: 25.6rem;
-  background-color: turquoise;
+  position: relative;
+  height: 20rem;
 }
-.s-flex {
-  height: 50%;
-  display: flex;
-  background-color: tomato;
+.s-bg1 {
+  animation: top 10s linear infinite;
 }
-.s-wrapper {
-  height: 42rem;
+.s-bg2 {
+  background-color: #ffffff;
+  animation: bottom 10s linear infinite;
 }
-.s-wrapper span {
-  margin: 0 3rem;
+.s-box {
+  width: 300%;
+  position: absolute;
 }
 .top {
-  align-items: end;
+  bottom: 1rem;
   color: #ffffff;
-  background-color: #fe001a;
-}
-.top span {
-  animation: top 3s infinite alternate linear;
-}
-@keyframes top {
-  100% {
-    transform: translate(10);
-  }
-}
-@keyframes bottom {
 }
 .bottom {
   color: #fe001a;
+  right: -70%;
+}
+.s-bgw {
   background-color: #ffffff;
 }
+@keyframes top {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100%;
+  }
+}
+@keyframes bottom {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 100%;
+  }
+}
+/*  */
 .stories2 {
   background: url(./images/stories2.png) no-repeat 50% 50% / 100%;
   height: 111.2rem;
@@ -445,6 +455,10 @@ footer .f-hei:nth-of-type(2) p {
   align-items: center;
   justify-content: center;
 }
+.f-sns-logo a:nth-of-type(5):hover {
+  transform: none;
+  border-radius: 0;
+}
 .f-sns-logo {
   display: flex;
   flex-wrap: wrap;
@@ -453,6 +467,12 @@ footer .f-hei:nth-of-type(2) p {
   align-items: center;
   height: 15rem;
   padding-right: 1rem;
+}
+.f-sns-logo a {
+  transition: 0.5s;
+}
+.f-sns-logo a:hover {
+  transform: scale(0.9);
 }
 /* 
 900 

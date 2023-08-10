@@ -180,6 +180,9 @@ header .toggle {
   top: 100%;
   transition: 0.3s;
 }
+.ss-margin {
+  margin: none;
+}
 
 /* toggle시 일단 하버로 */
 .sss .sp-1 {
